@@ -9,6 +9,7 @@
   {% if site.safe %}
     {% assign site.url = "http://allplayers.github.com/brochure.allplayers.com" %}
   {% endif %}
+{{ site.safe | debug }}
   <base href="{{ site.url }}/">
   <link rel="stylesheet" href="css/app.css">
   <link href="//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet" type="text/css">
