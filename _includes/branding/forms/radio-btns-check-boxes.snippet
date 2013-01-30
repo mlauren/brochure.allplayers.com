@@ -1,0 +1,99 @@
+    <div class="row">
+      <div class="eight columns">
+        <a name="rd-btns-checkboxes"><h3>Radio Buttons and Checkboxes</h3></a>
+      </div>
+      <div class="four columns no-brdr">
+        <dl class="tabs pill small">
+          <dd class="active"><a href="#radEx">Example</a></dd>
+          <dd><a href="#radCode">Code</a></dd>
+        </dl>
+      </div>
+    </div>
+    <ul class="tabs-content">
+      <li class="active" id="radExTab">
+        <form class="custom">
+          <div class="row">
+            <div class="four columns">
+              <label for="radio1"><input name="radio1" type="radio" id="radio1" style="display:none;"><span class="custom radio"></span> Radio Button 1</label>
+              <label for="radio2"><input name="radio1" type="radio" id="radio2" style="display:none;"><span class="custom radio checked"></span> Radio Button 2</label>
+              <label for="radio3"><input name="radio1" type="radio" id="radio3" disabled style="display:none;"><span class="custom radio"></span> Radio Button 3</label>
+            </div>
+            <div class="four columns">
+              <label for="radio4"><input name="radio2" type="radio" id="radio4"> Radio Button 1</label>
+              <label for="radio5"><input name="radio2" CHECKED type="radio" id="radio5"> Radio Button 2</label>
+              <label for="radio6"><input name="radio2" type="radio" id="radio6"> Radio Button 3</label>
+            </div>
+            <div class="four columns">
+              <label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Label for Checkbox</label>
+              <label for="checkbox2"><input type="checkbox" id="checkbox2" checked style="display: none;"><span class="custom checkbox checked"></span> Label for Checkbox</label>
+              <label for="checkbox3"><input type="checkbox" CHECKED id="checkbox3"> Label for Checkbox</label>
+            </div>
+          </div>
+          <h4>Select Elements</h4>
+
+          <label for="customDropdown">Dropdown Label</label>
+          <select style="display:none;" id="customDropdown">
+            <option SELECTED>This is a dropdown</option>
+            <option>This is another option</option>
+            <option>Look, a third option</option>
+          </select>
+          <div class="custom dropdown">
+            <a href="#" class="current">
+              This is a dropdown
+            </a>
+            <a href="#" class="selector"></a>
+            <ul>
+              <li>This is a dropdown</li>
+              <li>This is another option</li>
+              <li>Look, a third option</li>
+            </ul>
+          </div>
+        </form>
+      </li>
+      <li id="radCodeTab">
+  <pre><code data-language='html'>
+&lt;form class=&quot;custom&quot;&gt;
+
+  &lt;!-- Custom Radio --&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;four columns&quot;&gt;
+      &lt;label for=&quot;radio1&quot;&gt;&lt;input name=&quot;radio1&quot; type=&quot;radio&quot; id=&quot;radio1&quot; style=&quot;display:none;&quot;&gt;&lt;span class=&quot;custom radio&quot;&gt;&lt;/span&gt; Radio Button 1&lt;/label&gt;
+      &lt;label for=&quot;radio2&quot;&gt;&lt;input name=&quot;radio1&quot; type=&quot;radio&quot; id=&quot;radio2&quot; style=&quot;display:none;&quot;&gt;&lt;span class=&quot;custom radio checked&quot;&gt;&lt;/span&gt; Radio Button 2&lt;/label&gt;
+      &lt;label for=&quot;radio3&quot;&gt;&lt;input name=&quot;radio1&quot; type=&quot;radio&quot; id=&quot;radio3&quot; disabled style=&quot;display:none;&quot;&gt;&lt;span class=&quot;custom radio&quot;&gt;&lt;/span&gt; Radio Button 3&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;four columns&quot;&gt;
+      &lt;label for=&quot;radio4&quot;&gt;&lt;input name=&quot;radio2&quot; type=&quot;radio&quot; id=&quot;radio4&quot;&gt; Radio Button 1&lt;/label&gt;
+      &lt;label for=&quot;radio5&quot;&gt;&lt;input name=&quot;radio2&quot; CHECKED type=&quot;radio&quot; id=&quot;radio5&quot;&gt; Radio Button 2&lt;/label&gt;
+      &lt;label for=&quot;radio6&quot;&gt;&lt;input name=&quot;radio2&quot; type=&quot;radio&quot; id=&quot;radio6&quot;&gt; Radio Button 3&lt;/label&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Custom Checkbox --&gt;
+    &lt;div class=&quot;four columns&quot;&gt;
+      &lt;label for=&quot;checkbox1&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;checkbox1&quot; style=&quot;display: none;&quot;&gt;&lt;span class=&quot;custom checkbox&quot;&gt;&lt;/span&gt; Label for Checkbox&lt;/label&gt;
+      &lt;label for=&quot;checkbox2&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;checkbox2&quot; checked style=&quot;display: none;&quot;&gt;&lt;span class=&quot;custom checkbox checked&quot;&gt;&lt;/span&gt; Label for Checkbox&lt;/label&gt;
+      &lt;label for=&quot;checkbox3&quot;&gt;&lt;input type=&quot;checkbox&quot; CHECKED id=&quot;checkbox3&quot;&gt; Label for Checkbox&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Custom Selects --&gt;
+  &lt;label for=&quot;customDropdown&quot;&gt;Dropdown Label&lt;/label&gt;
+  &lt;select style=&quot;display:none;&quot; id=&quot;customDropdown&quot;&gt;
+    &lt;option SELECTED&gt;This is a dropdown&lt;/option&gt;
+    &lt;option&gt;This is another option&lt;/option&gt;
+    &lt;option&gt;Look, a third option&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;div class=&quot;custom dropdown&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;current&quot;&gt;
+      This is a dropdown
+    &lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;selector&quot;&gt;&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;This is a dropdown&lt;/li&gt;
+      &lt;li&gt;This is another option&lt;/li&gt;
+      &lt;li&gt;Look, a third option&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</code></pre>            
+</li>
+</ul>

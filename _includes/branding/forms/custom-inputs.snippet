@@ -1,0 +1,50 @@
+      <div class="row">
+        <div class="eight columns">
+          <a name="custom-inputs">
+          <h3>Custom Inputs</h3>
+          </a>
+        </div>
+        <div class="four columns no-brdr">
+          <dl class="tabs pill small">
+            <dd class="active"><a href="#custEx">Explanation</a></dd>
+            <dd><a href="#custCode">Code</a></dd>
+          </dl>
+        </div>
+      </div>
+      <h5 class="no-marg-top subheader">Add a class of "custom" to a form and, if you want, <code>jquery.foundation.forms.js</code> will do everything.</h5>
+      <ul class="tabs-content">
+        <li class="active" id="custExTab">
+          <p>Once initialized it will look for any checkbox, radio button, or select element and replace it with custom markup that Foundation provides styles for. It will even correctly respect and apply default states for radio, checkbox and select elements. You can use the "checked" or "selected" properties just like normal.</p>
+          <p>If you want to avoid a potential flash (waiting for js to load and replace your default elements) you can supply the custom markup as part of the page, and the js will instead simply map the custom elements to the inputs.</p>
+          <p>If you dynamically add inputs to your page you'll need to update the custom markup.  You can safely call the previous function again, but to improve performance you can also scope it to only update a single input.</p>
+        </li>
+        <li id="custCodeTab">
+  <pre><code data-language='html'>
+  &lt;form class=&quot;custom&quot;&gt;
+    &lt;!-- No custom markup applied --&gt;
+    &lt;label for=&quot;radio1&quot;&gt;
+      &lt;input name=&quot;radio1&quot; type=&quot;radio&quot; id=&quot;radio1&quot;&gt; Radio Button 1
+    &lt;/label&gt;
+
+    &lt;!-- Above markup will become this --&gt;
+    &lt;label for=&quot;radio1&quot;&gt;
+      &lt;input name=&quot;radio1&quot; type=&quot;radio&quot; id=&quot;radio1&quot; style=&quot;display:none;&quot;&gt;
+      &lt;span class=&quot;custom radio&quot;&gt;&lt;/span&gt; Radio Button 1
+    &lt;/label&gt;
+
+    &lt;!-- This markup will NOT be touched by Javascript --&gt;
+    &lt;label for=&quot;radio2&quot;&gt;
+      &lt;input name=&quot;radio1&quot; type=&quot;radio&quot; id=&quot;radio2&quot; style=&quot;display:none;&quot;&gt;
+      &lt;span class=&quot;custom radio checked&quot;&gt;&lt;/span&gt; Radio Button 2
+    &lt;/label&gt;
+  &lt;/form&gt;
+
+  &lt;!-- The HTML for Scoping to Single Input --&gt;
+  &lt;select id=&quot;changedSelectInput&quot;&gt;
+    &lt;option&gt;Pick One&lt;/option&gt;
+  &lt;/select&gt;
+
+  &lt;!-- The JS for Scoping to Single Input --&gt;
+  $(&quot;#changedSelectInput&quot;).foundationCustomForms();
+  </code></pre>            </li>
+    </ul>

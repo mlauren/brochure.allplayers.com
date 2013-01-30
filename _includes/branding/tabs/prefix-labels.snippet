@@ -1,0 +1,46 @@
+          <div class="row">
+            <div class="eight columns">
+              <a name="contained-tabs">
+              <h4>Contained Tabs</h4>
+              </a>
+            </div>
+            <div class="four columns">
+              <dl class="tabs pill small">
+                <dd class="active"><a href="#contEx">Example</a></dd>
+                <dd><a href="#contCode">Code</a></dd>
+              </dl>
+            </div>
+          </div>
+          <p>Contained tabs have a simple added class of "contained" on the tabs-content element. What that means is the tab content has a border around it tying it to the tabs. You can still use standard column sizes inside a tab element.</p>
+          <p>You'll also notice in this example that a <code>dt</code> element can serve to label groups of tabs. You can alternatively use an <code>li.section-title</code> to do the same thing.</p>
+          <ul class="tabs-content">
+            <li class="active" id="contExTab">
+              <dl class="tabs contained">
+                <dt>Title 1</dt>
+                <dd class="active"><a href="#simpleContained1">Simple Tab 1</a></dd>
+                <dd class="hide-for-small"><a href="#simpleContained2">Simple Tab 2</a></dd>
+                <dt class="hide-for-small">Title 1</dt>
+                <dd class="hide-for-small"><a href="#simpleContained3">Simple Tab 3</a></dd>
+              </dl>
+              <ul class="tabs-content contained">
+                <li class="active" id="simpleContained1Tab">This is simple tab 1s content. Pretty neat, huh?</li>
+                <li id="simpleContained2Tab">This is simple tab 2s content. Now you see it!</li>
+                <li id="simpleContained3Tab">This is simple tab 3s content.</li>
+              </ul>
+            </li>
+            <li id="contCodeTab">
+<pre><code data-language='html'>
+&lt;dl class=&quot;tabs contained&quot;&gt;
+  &lt;dt&gt;Title 1&lt;/dt&gt;
+  &lt;dd class=&quot;active&quot;&gt;&lt;a href=&quot;#simpleContained1&quot;&gt;Simple Tab 1&lt;/a&gt;&lt;/dd&gt;
+  &lt;dd class=&quot;hide-for-small&quot;&gt;&lt;a href=&quot;#simpleContained2&quot;&gt;Simple Tab 2&lt;/a&gt;&lt;/dd&gt;
+  &lt;dt class=&quot;hide-for-small&quot;&gt;Title 1&lt;/dt&gt;
+  &lt;dd class=&quot;hide-for-small&quot;&gt;&lt;a href=&quot;#simpleContained3&quot;&gt;Simple Tab 3&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;ul class=&quot;tabs-content contained&quot;&gt;
+  &lt;li class=&quot;active&quot; id=&quot;simpleContained1Tab&quot;&gt;This is simple tab 1s content. Pretty neat, huh?&lt;/li&gt;
+  &lt;li id=&quot;simpleContained2Tab&quot;&gt;This is simple tab 2s content. Now you see it!&lt;/li&gt;
+  &lt;li id=&quot;simpleContained3Tab&quot;&gt;This is simple tab 3s content.&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>            </li>
+          </ul>

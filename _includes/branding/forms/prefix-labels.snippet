@@ -1,0 +1,106 @@
+   <div class="row">
+      <div class="eight columns">
+        <a name="prefix-labels">
+        <h3>Pre/Postfix Labels &amp; Actions</h3>
+        </a>
+      </div>
+      <div class="four columns no-brdr">
+        <dl class="tabs pill small">
+          <dd class="active"><a href="#postEx">Example</a></dd>
+          <dd><a href="#postCode">Code</a></dd>
+        </dl>
+      </div>
+    </div>
+    <p>Foundation forms support actions tied to buttons, and prefix / postfix labels, through a versatile approach using special grid properties. Essentially you can use a 'collapsed' row to create label / action / input combinations. Here are a few examples.</p>
+    <p><strong>Note:</strong> for these prefix and postfix labels we're using the <a href="grid.php">mobile grid</a> to size our labels correctly on small devices.</p>
+    <ul class="tabs-content">
+      <li class="active" id="postExTab">
+
+        <div class="row">
+          <div class="six columns">
+            <label>Input with a prefix character</label>
+            <div class="row">
+              <div class="twelve columns">
+                <div class="row collapse">
+                  <div class="two mobile-one columns">
+                    <span class="prefix">#</span>
+                  </div>
+                  <div class="ten mobile-three columns">
+                    <input type="text" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="six columns">
+            <label>Input with a postfix label</label>
+            <div class="row">
+              <div class="twelve columns">
+                <div class="row collapse">
+                  <div class="nine mobile-three columns">
+                    <input type="text" />
+                  </div>
+                  <div class="three mobile-one columns">
+                    <span class="postfix">.com</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li id="postCodeTab">
+    <pre><code data-language='html'>
+  &lt;!-- Prefix label --&gt;
+  &lt;label&gt;Input with a prefix character&lt;/label&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;four columns&quot;&gt;
+      &lt;div class=&quot;row collapse&quot;&gt;
+        &lt;div class=&quot;two mobile-one columns&quot;&gt;
+          &lt;span class=&quot;prefix&quot;&gt;#&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;ten mobile-three columns&quot;&gt;
+          &lt;input type=&quot;text&quot; /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Postfix label --&gt;
+  &lt;label&gt;Input with a postfix label&lt;/label&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;five columns&quot;&gt;
+      &lt;div class=&quot;row collapse&quot;&gt;
+        &lt;div class=&quot;nine mobile-three columns&quot;&gt;
+          &lt;input type=&quot;text&quot; /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;three mobile-one columns&quot;&gt;
+          &lt;span class=&quot;postfix&quot;&gt;.com&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Postfix action --&gt;
+  &lt;div class=&quot;row collapse&quot;&gt;
+    &lt;div class=&quot;ten mobile-three columns&quot;&gt;
+      &lt;input type=&quot;text&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;two mobile-one columns&quot;&gt;
+      &lt;a class=&quot;button expand postfix&quot;&gt;Search&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  </code></pre>            </li>
+            </ul>
+
+    <label>Input with a postfix action (button)</label>
+
+    <div class="row collapse">
+      <div class="ten mobile-three columns">
+        <input type="text" />
+      </div>
+      <div class="two mobile-one columns">
+        <a class="button expand postfix">Search</a>
+      </div>
+    </div>
+

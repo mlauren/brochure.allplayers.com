@@ -1,0 +1,65 @@
+  <div class="row">
+    <div class="eight columns">
+      <a name="fieldsets">
+      <h3>Fieldsets</h3>
+      </a>
+    </div>
+    <div class="four columns no-brdr">
+      <dl class="tabs pill small">
+        <dd class="active"><a href="#fieldEx">Example</a></dd>
+        <dd><a href="#fieldCode">Code</a></dd>
+      </dl>
+    </div>
+  </div>
+  <p>Simple elements that can contain all or part of a form to create better division.</p>
+  <ul class="tabs-content">
+    <li class="active" id="fieldExTab">
+      <form>
+        <fieldset>
+
+          <legend>Simple Fieldset</legend>
+
+          <label>This is a label.</label>
+          <input type="text" placeholder="Standard Input" />
+
+          <label>Address</label>
+          <input type="text" />
+          <input type="text" class="six" />
+
+        </fieldset>
+      </form>
+
+       <form>
+        <fieldset class="accordion">
+
+          <legend><h5>Accordion Fieldset</h5></legend>
+          <div class="fieldset-wrapper">
+            <label>This is a label.</label>
+            <input type="text" placeholder="Standard Input" />
+
+            <label>Address</label>
+            <input type="text" />
+            <input type="text" class="six" />
+          </div>
+
+        </fieldset>
+      </form>
+    </li>
+    <li id="fieldCodeTab">
+  <pre><code data-language='html'>
+  &lt;form&gt;
+    &lt;fieldset&gt;
+
+      &lt;legend&gt;Fieldset Name&lt;/legend&gt;
+
+      &lt;label&gt;This is a label.&lt;/label&gt;
+      &lt;input type=&quot;text&quot; placeholder=&quot;Standard Input&quot; /&gt;
+
+      &lt;label&gt;Address&lt;/label&gt;
+      &lt;input type=&quot;text&quot; /&gt;
+      &lt;input type=&quot;text&quot; class=&quot;six&quot; /&gt;
+
+    &lt;/fieldset&gt;
+  &lt;/form&gt;
+  </code></pre>            </li>
+    </ul>

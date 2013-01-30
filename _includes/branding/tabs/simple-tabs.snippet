@@ -1,0 +1,40 @@
+          <div class="row">
+            <div class="eight columns">
+              <a name="simple-tabs"><h3>Simple Tabs</h3></a>
+            </div>
+            <div class="four columns">
+              <dl class="tabs pill small">
+                <dd class="active"><a href="#tabsEx">Example</a></dd>
+                <dd><a href="#tabsCode">Code</a></dd>
+              </dl>
+            </div>
+          </div>
+    			<p>Tabs are made of <strong>two objects:</strong> a <code>dl/ul</code> object containing the tabs themselves, and a <code>ul</code> object containing the tab content. If you simply want visual tabs (as seen in this documentation) without the on-page hookup, you only need the DL/LI. If you want functional tabs, just be sure that each tab is linked to an ID, and that the corresponding tab has an ID of <code>#tabnameTab</code>. Check out these examples.</p>
+  				<p><em>Note: The third tab is using the <a href="media-queries.php">mobile visibility classes</a> to hide on small devices.</em></p>
+          <ul class="tabs-content">
+            <li class="active" id="tabsExTab">
+              <dl class="tabs">
+                <dd class="active"><a href="#simple1">Simple Tab 1</a></dd>
+                <dd><a href="#simple2">Simple Tab 2</a></dd>
+                <dd class="hide-for-small"><a href="#simple3">Simple Tab 3</a></dd>
+              </dl>
+              <ul class="tabs-content">
+                <li class="active" id="simple1Tab">This is simple tab 1s content. Pretty neat, huh?</li>
+                <li id="simple2Tab">This is simple tab 2s content. Now you see it!</li>
+                <li id="simple3Tab">This is simple tab 3s content.</li>
+              </ul>
+            </li>
+            <li id="tabsCodeTab">
+<pre><code data-language='html'>
+&lt;dl class=&quot;tabs&quot;&gt;
+  &lt;dd class=&quot;active&quot;&gt;&lt;a href=&quot;#simple1&quot;&gt;Simple Tab 1&lt;/a&gt;&lt;/dd&gt;
+  &lt;dd&gt;&lt;a href=&quot;#simple2&quot;&gt;Simple Tab 2&lt;/a&gt;&lt;/dd&gt;
+  &lt;dd class=&quot;hide-for-small&quot;&gt;&lt;a href=&quot;#simple3&quot;&gt;Simple Tab 3&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;ul class=&quot;tabs-content&quot;&gt;
+  &lt;li class=&quot;active&quot; id=&quot;simple1Tab&quot;&gt;This is simple tab 1s content. Pretty neat, huh?&lt;/li&gt;
+  &lt;li id=&quot;simple2Tab&quot;&gt;This is simple tab 2s content. Now you see it!&lt;/li&gt;
+  &lt;li id=&quot;simple3Tab&quot;&gt;This is simple tab 3s content.&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>            </li>
+          </ul>
