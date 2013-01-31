@@ -9,17 +9,20 @@
       {% endif %}
       {% if weight == nodeweight %}
         {% if group == null or group == node.group %}
-          <div class="{% if page.url == node.url %}active {% endif %}{% if node.title == "Tabs" %}tabs-notmenu{% else %}{{ node.title | replace:' ','-' | downcase }}{% endif %}">
-            {% if page.url == node.url %}
-  	          {% if node.submenu %}
-            	<ul>
+          {% if page.url == node.url %}
+	          {% if node.submenu %}
+            <div class="twelve columns">
+            <div class="row">
+            	<ul class="side-nav" data-magellan-expedition="fixed" id="magellan-nav">
   	          	{% for item in node.submenu %}
-  	          		<li><a href="{{ node.url }}#{{ item.hook }}">{{ item.title }}</a></li>
+  	          		<li data-magellan-arrival="{{ item.data-magellan-destination }}"><a href="{{ node.url }}#{{ item.hook }}">{{ item.title }}</a></li>
+                  <li classs="divider"></li>
   	          	{% endfor %}
   	          </ul>
-  	          {% endif %}
-            {% endif %}
-          </div>
+            </div>
+            </div>
+	          {% endif %}
+          {% endif %}
         {% endif %}
       {% endif %}
     {% endif %}

@@ -12811,23 +12811,29 @@ body.branding-guide {
   border: 1px solid white;
 }
 
+/* line 28, ../sass/branding-guide.scss */
+#sidebar1 #magellan-nav {
+  top: 35px !important;
+  width: 100%;
+}
+
 /**~Footer~**/
-/* line 30, ../sass/branding-guide.scss */
+/* line 31, ../sass/branding-guide.scss */
 footer {
   background-color: #6d6d6d;
   z-index: 0;
   position: relative;
 }
-/* line 31, ../sass/branding-guide.scss */
+/* line 32, ../sass/branding-guide.scss */
 footer ul {
   list-style-type: none;
 }
-/* line 32, ../sass/branding-guide.scss */
+/* line 33, ../sass/branding-guide.scss */
 footer ul li {
   font-weight: bold;
   font-size: 85%;
 }
-/* line 34, ../sass/branding-guide.scss */
+/* line 35, ../sass/branding-guide.scss */
 footer .footer-branding {
   margin: 30px;
 }
