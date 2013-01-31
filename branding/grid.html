@@ -6,7 +6,7 @@ group: branding
 description: For more information on what grids can do, visit <a href="http://foundation.zurb.com/grid.php">Zurb Foundation</a> to learn more.
 weight: 2
 submenu:
-  - { hook: "an-example", title: "An Example" }
+  - { hook: "an-example", title: "An Example", data-magellan-destination: "an-example"}
 ---
 
 <h1>{{ page.title }}</h1>
@@ -14,7 +14,7 @@ submenu:
 <hr>
 
 <div class="row">
-  <div class="eight columns">
+  <div class="eight columns" data-magellan-destination="an-example">
     <a name="an-example"><h3>An Example</h3></a>
   </div>
   <div class="four columns">

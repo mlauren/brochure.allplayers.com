@@ -41,7 +41,7 @@
     $fixedMagellan.on('magellan.update-position', function(){
       var $el = $(this);
       $el.data("magellan-fixed-position","");
-      $el.data("magellan-top-offset", "");
+      $el.data("magellan-top-offset", 35);
     });
 
     $fixedMagellan.trigger('magellan.update-position');
@@ -61,7 +61,7 @@
         if ($expedition.data("magellan-fixed-position") != fixed_position) {
           $expedition.data("magellan-fixed-position", fixed_position);
           if (fixed_position) {
-            $expedition.css({position:"fixed", top:0});
+            $expedition.css({position:"fixed", top:35});
           } else {
             $expedition.css({position:"", top:""});
           }

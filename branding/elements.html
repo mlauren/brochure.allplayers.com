@@ -5,16 +5,16 @@ title: Elements
 group: branding
 weight: 6
 submenu:
-  - { hook: "alerts", title: "Alerts" }
-  - { hook: "labels", title: "Labels" }
-  - { hook: "tooltips", title: "Tooltips" }
-  - { hook: "accordion", title: "Accordion" }
-  - { hook: "panels", title: "Panels" }
-  - { hook: "table", title: "Table" }
-  - { hook: "inline-lists", title: "Table" }
-  - { hook: "progress-bar", title: "Progress Bar" }
-  - { hook: "thumbs", title: "Thumbs" }
-  - { hook: "price-tables", title: "Price Tables" }
+  - { hook: "alerts", title: "Alerts", data-magellan-destination: "alerts" }
+  - { hook: "labels", title: "Labels", data-magellan-destination: "labels" }
+  - { hook: "tooltips", title: "Tooltips", data-magellan-destination: "tooltips" }
+  - { hook: "accordion", title: "Accordion", data-magellan-destination: "accordion" }
+  - { hook: "panels", title: "Panels", data-magellan-destination: "panels" }
+  - { hook: "table", title: "Table", data-magellan-destination: "table" }
+  - { hook: "inline-lists", title: "Table", data-magellan-destination: "inline-lists" }
+  - { hook: "progress-bar", title: "Progress Bar", data-magellan-destination: "progress-bar" }
+  - { hook: "thumbs", title: "Thumbs", data-magellan-destination: "thumbs" }
+  - { hook: "price-tables", title: "Price Tables", data-magellan-destination: "price-tables" }
 ---
 
 <h1>{{ page.title }}</h1>
@@ -32,11 +32,11 @@ submenu:
   <hr>
   {% include branding/elements/inline_lists.snippet %}
   <hr>
-  {% include branding/elements/table.snippet %}
+  {% include branding/elements/tables.snippet %}
   <hr>
   {% include branding/elements/progress_bar.snippet %}
   <hr>
   {% include branding/elements/thumbs.snippet %}
   <hr>
-  {% include branding/elements/price_thumbs.snippet %}
+  {% include branding/elements/price_tables.snippet %}
   <hr>

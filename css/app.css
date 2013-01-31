@@ -12812,8 +12812,12 @@ body.branding-guide {
 }
 
 /* line 28, ../sass/branding-guide.scss */
-#sidebar1 #magellan-nav {
+#sidebar1 .row {
   top: 35px !important;
+}
+
+/* line 29, ../sass/branding-guide.scss */
+ul.magellan {
   width: 100%;
 }
 
