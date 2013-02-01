@@ -28,7 +28,7 @@
 
     &.success { background-color: $successColor; color: $successTextColor; text-shadow: 0 1px $white; }
     &.alert { background-color: $alertColor; color: $alertTextColor; text-shadow: 0 -1px rgba($white,.3); }
-    &.secondary { background-color: darken($alertColor, 10%); color: $alertTextColor; text-shadow: 0 1px rgba(#fff,.3); }
+    &.secondary { background-color: $secondaryAlertColor; color: $secondaryAlertTextColor; text-shadow: 0 1px rgba(#fff,.3); }
 
     a.close { color: #333; position: absolute; #{$defaultOpposite}: 4px; top: 3px; font-size: ms(1); opacity: 0.2; padding: 4px; }
     a.close:hover, a.close:focus { opacity: 0.4; }
@@ -98,19 +98,19 @@
 
   /* Accordion ---------------------- */
 
-  ul.accordion { margin: 0 0 22px 0; border-bottom: 1px solid $mainColor;
+  ul.accordion { margin: 0 0 22px 0; border-bottom: 1px solid $fieldBorderColor;
 
-    &>li {  list-style: none; margin: 0; padding: 0; border-top: 1px solid $mainColor;
+    &>li {  list-style: none; margin: 0; padding: 0; border-top: 1px solid $fieldBorderColor;
 
-      & > div.title { cursor: pointer; background: $mainColor; padding: 15px; margin: 0; position: relative;  border-#{$defaultFloat}: 1px solid $mainColor; border-#{$defaultOpposite}: 1px solid $mainColor; @include single-transition(0.15s, background, linear);
+      & > div.title { cursor: pointer; background: $secondaryColor; padding: 10px; margin: 0; position: relative;  border-#{$defaultFloat}: 1px solid $fieldBorderColor; border-#{$defaultOpposite}: 1px solid $fieldBorderColor; @include single-transition(0.15s, background, linear);
 
         h1, h2, h3, h4, h5 { margin: 0; color: $white; }
-        &:after { @include cssTriangle(6px, $white, $defaultOpposite); position: absolute; #{$defaultOpposite}: 15px; top: 21px; }
+        &:after { @include cssTriangle(6px, $white, $defaultFloat); position: absolute; #{$defaultOpposite}: 15px; top: 15px; }
       }
 
       .content { display: none; padding: 15px; }
 
-      &.active { border-top: 3px solid $mainColor;
+      &.active { border-top: 1px solid $fieldBorderColor;
 
         .title { background: $white; padding-top: 13px;
 
@@ -118,7 +118,7 @@
 
           &:after { @include cssTriangle(6px, darken($secondaryColor, 30%), top); }
         }
-        .content { background: $white; display: block; border-#{$defaultFloat}: 1px solid $mainColor; border-#{$defaultOpposite}: 1px solid $mainColor; }
+        .content { background: $white; display: block; border-#{$defaultFloat}: 1px solid $fieldBorderColor; border-#{$defaultOpposite}: 1px solid $fieldBorderColor; }
       }
     }
   }
@@ -169,15 +169,15 @@
 
   ul.breadcrumbs { display: block; background: lighten($secondaryColor, 5%); padding: 6px 10px 7px; border: 1px solid $secondaryColor; @include border-radius(2px); overflow: hidden; margin-#{$defaultFloat}: 0;
 
-    li { margin: 0; padding: 0 12px 0 0; float: $defaultFloat; list-style: none;
-
+    li { margin: 0; padding: 15px 12px 0 0; float: $defaultFloat; list-style: none;
       a, span { text-transform: uppercase; @include font-size(11); padding-#{$defaultFloat}: 12px; }
+      span {color: $white;}
       &:first-child a, &:first-child span { padding-#{$defaultFloat}: 0; }
     }
 
     li:before { content: "/"; color: #aaa; }
     li:first-child:before { content: " "; }
-    li.current a { cursor: default; color: #333; }
+    li.current a { cursor: default; color: $white; }
     li:hover a, li a:focus { text-decoration: underline; }
     li.current:hover a, li.current a:focus { text-decoration: none; }
     li.unavailable {
@@ -241,8 +241,8 @@
   table thead tr th:last-child, table tfoot tr td:last-child { border-#{$defaultOpposite}: none; }
 
   table tbody tr.even,
-  table tbody tr.alt { background: #f9f9f9; }
-  table tbody tr:nth-child(even) { background: #f9f9f9; }
+  table tbody tr.alt { background: $standardAlertColor; }
+  table tbody tr:nth-child(even) { background: $standardAlertColor; }
   table tbody tr td { color: #333; padding: 9px 10px; vertical-align: top; border: none; }
 
   /* Microformats ---------------------- */
@@ -267,7 +267,7 @@
   	.meter { background: $mainColor; height: 100%; display: block; width:50%; }
    	&.secondary .meter { background: $secondaryColor;}
   	&.success .meter { background: $successTextColor;}
-  	&.alert .meter { background: $alertTextColor;}
+  	&.alert .meter { background: $alertColor;}
 
   	/* border radii */
   	&.radius { @include border-radius($buttonRadius);
