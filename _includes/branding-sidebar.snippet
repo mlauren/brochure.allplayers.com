@@ -12,12 +12,12 @@
           {% if page.url == node.url %}
 	          {% if node.submenu %}
               <div>
-                	<ul class="vertical tabs" data-magellan-expedition>
+                	<ul class="side-nav" data-magellan-expedition="fixed">
       	          	{% for item in node.submenu %}
       	          		<li data-magellan-arrival="{{ item.data-magellan-destination }}"><a href="{{ node.url }}#{{ item.hook }}">{{ item.title }}</a></li>
       	          	{% endfor %}
       	          </ul>
-                </div>
+              </div>
 	          {% endif %}
           {% endif %}
         {% endif %}
