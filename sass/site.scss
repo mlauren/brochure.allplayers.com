@@ -42,7 +42,7 @@
 	 }
 	 #link-list {padding-bottom: 20px;}
 
-	 .three.columns {
+	 .four.columns {
 	 	h4 {color: $midGrey;}
 	 	ul {list-style-type: none;
 	 		li { padding-left: 10px;
@@ -191,6 +191,10 @@ h5 {
 	}
 }
 
+/** Addthis ~**/
+.addthis_floating_style { background-color: transparent; position: initial;}
+.addthis_toolbox.addthis_vertical_style {padding: 8px;}
+
 .addthis_toolbox.addthis_vertical_style {width: 100%;
 	a {margin-top: 10px; border-bottom: 1px solid $midLightGrey; }
 }
@@ -200,3 +204,31 @@ h5 {
 		&:first-child {margin-right: 5px;}
 	}
 }
+
+.fbanner {
+	background-color: #000; opacity: 0.8; color: #fff; padding: 5px;
+	margin: -38px 15px 0 -15px; border: 1px; border-bottom-left-radius: 3px; -moz-border-radius-bottomleft: 3px; -webkit-border-bottom-left-radius: 3px; text-align: center; font-style: italic;
+}
+
+.fpanel {
+	background: #f2f2f2; border: solid 1px #e6e6e6; margin: 0 0 22px 0; padding: 10px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
+}
+.fpanel-inside {
+	background: #ffffff; border: solid 1px #e6e6e6; margin: 0;
+	padding: 0; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
+	h3 {color: #000;
+	}
+}
+
+/**More Info**/
+h3.readmore {
+	display: inline-block;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+span.moreinfo {
+	border-left: 1px solid;
+    border-color: $midLightGrey;
+    padding: 7px;
+    padding-left: 15px;
+	}
