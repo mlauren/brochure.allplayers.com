@@ -31,7 +31,7 @@
                   {% for item in site.pages %}
                     {% if item.tags contains 'for_your_enterprise' or item.tags contains 'for_you, for_your_enterprise' %}
                       {% if item.root != 'enabled' %}
-                        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                        <li><a href="{{ site_url }}{{ item.url }}">{{ item.title }}</a></li>
                       {% endif %}
                     {% endif %}
                   {% endfor %}
@@ -48,9 +48,9 @@
                   {% for page in site.pages %}
                     {% if page.tags == 'basic_user_pages' %}
                       {% if page.root == 'enabled' %}
-                        <li><a href="{{ page.url }}"><label>{{ page.title }}</label></a></li>
+                        <li><a href="{{ site_url }}{{ page.url }}"><label>{{ page.title }}</label></a></li>
                       {% else %}
-                        <li><a href="{{ page.url }}">{{ page.title | truncate: 25 }}</a></li>
+                        <li><a href="{{ site_url }}{{ page.url }}">{{ page.title | truncate: 25 }}</a></li>
                       {% endif %}
                     {% endif %}
                   {% endfor %}
@@ -62,9 +62,9 @@
                   {% for page in site.pages %}
                     {% if page.tags == 'group_admin_pages' %}
                       {% if page.root == 'enabled' %}
-                        <li><a href="{{ page.url }}"><label>{{ page.title }}</label></a></li>
+                        <li><a href="{{ site_url }}{{ page.url }}"><label>{{ page.title }}</label></a></li>
                       {% else %}
-                        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                        <li><a href="{{ site_url }}{{ page.url }}">{{ page.title }}</a></li>
                       {% endif %}
                     {% endif %}
                   {% endfor %}
@@ -79,9 +79,9 @@
             {% for page in site.pages %}
               {% if page.tags == 'benefits_pages' %}
                 {% if page.root == 'enabled' %}
-                    <li><a href="{{ page.url }}"><label>{{ page.title }}</label></a></li>
+                    <li><a href="{{ site_url }}{{ page.url }}"><label>{{ page.title }}</label></a></li>
                   {% else %}
-                     <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                     <li><a href="{{ site_url }}{{ page.url }}">{{ page.title }}</a></li>
                   {% endif %}
                 {% endif %}
             {% endfor %}
