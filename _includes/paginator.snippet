@@ -1,0 +1,24 @@
+<!-- Pagination links -->
+<div class="pagination">
+	<ul>
+	{% assign first = false %}
+	{% assign last = false %}
+	{% for post in site.posts %}
+		{% if post.url != page.url %}
+			<li><a href="{{ post.url }}">{{ forloop.index }}</a></li>
+		{% else %}
+			{% assign first = true %}
+			{% assign last = true %}
+			<li>{{ forloop.index }}</li>
+		{% endif %}
+		{% if forloop.last %}
+			{% if first %}
+				<li><a href="">Previous</a></li>
+			{% endif %}
+			{% if last %}
+		  		<li><a href="">Next</a></li>
+		  	{% endif %}
+		{% endif %}
+	{% endfor %}
+	</ul>
+</div>
