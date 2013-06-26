@@ -4,11 +4,10 @@ server_port: 3000
 auto: true
 permalink: ./:title.html
 img: images/global/header-logo.png
-site_main: /
+site_main: /brochure
 branding_url: branding_index.html
 paginate: 2
-
-
+url: /brochure
 
 basic_user_videos:
    - title: this is a title
