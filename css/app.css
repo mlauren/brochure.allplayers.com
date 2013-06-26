@@ -7701,7 +7701,7 @@ form.custom .custom.disabled {
 section#hero-wrapper {
   background: #474747;
   min-height: 400px;
-  background: url(../images/hero/homepage-hero-bg.png) no-repeat 65% -90px, url(../images/global/bg/low_contrast_linen_bg.png) repeat 0 0;
+  background: url(../images/hero/homepage-hero-bg.png) no-repeat 50% -40px, url(../images/global/bg/low_contrast_linen_bg.png) repeat 0 0;
   padding-bottom: 20px;
   margin-bottom: 0;
 }
