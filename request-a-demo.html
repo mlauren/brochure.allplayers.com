@@ -11,38 +11,13 @@ right_col_blocks: [job_block]
 
 <p>Our demos are a pain-free, fun experience that don't take all day. Complete the request below and one of our member service teammates will work with you to set up the perfect time for you to see AllPlayers.com in action.</p>
 
-<!-- Row Layout for forms -->
-  <form>
-    <input type="text" placeholder="First Name" />
-	 <input type="text" placeholder="Last Name" />
-	 <input type="text" placeholder="Email Address" />
-	 <input type="text" placeholder="Title" />
-	 <input type="text" placeholder="Organization" />
-	 <input type="text" placeholder="Referred By" />
-	 <input type="text" placeholder="Country" />
-    <label>Address</label>
-    <input type="text" class="twelve" placeholder="Street" />
-    <div class="row">
-      <div class="six columns">
-        <input type="text" placeholder="City" />
-      </div>
-      <div class="three columns">
-        <input type="text" placeholder="State" />
-      </div>
-      <div class="three columns">
-        <input type="text" placeholder="ZIP" />
-      </div>
-    </div>
-	 <input type="text" placeholder="Phone Number" />
-	 <label>Best day/time to contact</label>
-	 <input type="text" placeholder="Contact Time" />
-    <textarea placeholder="Comments"></textarea>
-	 <label>Solve this simple math problem (Why?):</label>
-	 <div class="row">
-		<div class="three columns">
-	 		<input type="text" placeholder="0 + 1 = ?" />
-		</div>
-	</div>
-  </form>
+<script src="https://www.allplayers.com/sites/all/libraries/allplayers.js/bin/allplayers.embed.client.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function() {
+    $('#request-demo').allplayers_client({
+      src: 'https://platform.allplayers.com/home/request-demo?contentonly=1'
+    });
+  });
+</script>
+<div id="request-demo"></div>
 
-  
