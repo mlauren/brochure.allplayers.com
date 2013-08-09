@@ -3,7 +3,6 @@ server: true
 port: 3000
 permalink: ./:title.html
 img: images/global/header-logo.png
-site_main: /brochure
 branding_url: branding_index.html
 paginate: 2
 url: /brochure
