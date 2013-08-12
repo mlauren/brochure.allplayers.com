@@ -1,0 +1,61 @@
+// Your custom settings file to override Foundation defaults
+   @import "settings";
+
+// Comment out this import if you are customizing you imports below
+   @import "foundation";
+
+// ----------------------------------------
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+// @import "compass/css3";
+   @import "functions/all";
+
+// Control which mixins you have access too
+
+   @import "mixins/clearfix";
+   @import "mixins/css-triangle";
+   @import "mixins/font-size";
+   @import "mixins/gradients";
+   @import "mixins/radius";
+   @import "mixins/shadows";
+
+// Must include next two for semantic grid to work
+
+   @import "mixins/respond-to";
+   @import "mixins/semantic-grid";
+
+// @import "modular-scale";
+   @import "common/globals";
+
+// Must include the grid for any responsiveness
+
+   @import "components/grid";
+
+// Control which common styles get compiled
+
+   @import "common/typography";
+   @import "common/typography";
+   @import "common/forms";
+
+// Control which components you get if customizing
+
+   @import "components/modules/hero";
+   @import "components/modules/findgroup";
+   @import "components/modules/buttons";
+   @import "components/modules/tabs";
+   @import "components/modules/ui";
+   @import "components/modules/topbar";
+   @import "components/modules/navbar";
+   @import "components/modules/orbit";
+   @import "components/modules/reveal";
+   @import "components/modules/offcanvas";
+
+// Media Queries Overrides
+   @import "components/modules/mqueries";
+
+// Site specific styles 
+   @import "branding-guide";
+
+   // Site specific styles
+   @import "site";
