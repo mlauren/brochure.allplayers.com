@@ -13044,6 +13044,7 @@ footer .footer-branding {
 /* line 42, ../sass/_site.scss */
 #footer #info-block h4 {
   margin-left: 0;
+  margin-top: 0;
 }
 /* line 44, ../sass/_site.scss */
 #footer #link-list {
