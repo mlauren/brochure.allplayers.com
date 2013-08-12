@@ -12459,6 +12459,7 @@ table.hide-for-medium {
     overflow: hidden;
     height: 45px;
     background: #222222;
+    z-index: 999;
     /* Override contain to grid stuff for breakpoint */
     /* Setting up the sliding area */
     /* When the Small Nav is Showing */
@@ -13441,21 +13442,31 @@ h5 span.toggler.toggler.collapsed {
   top: 35px;
 }
 /* line 204, ../sass/_site.scss */
+.auth .show-for-small ul {
+  margin: 0;
+}
+/* line 205, ../sass/_site.scss */
 .auth div.auth.show-for-medium-down {
   top: 45px;
 }
-/* line 205, ../sass/_site.scss */
+/* line 206, ../sass/_site.scss */
 .auth .small.button {
   padding: 5px 10px;
   font-size: 14px;
   float: left;
 }
-/* line 206, ../sass/_site.scss */
+/* line 207, ../sass/_site.scss */
 .auth .small.button:first-child {
   margin-right: 5px;
 }
 
-/* line 210, ../sass/_site.scss */
+@media only screen and (max-width: 767px) {
+  /* line 212, ../sass/_site.scss */
+  .auth {
+    top: 45px;
+  }
+}
+/* line 215, ../sass/_site.scss */
 .fbanner {
   background-color: #000;
   opacity: 0.8;
@@ -13470,7 +13481,7 @@ h5 span.toggler.toggler.collapsed {
   font-style: italic;
 }
 
-/* line 215, ../sass/_site.scss */
+/* line 220, ../sass/_site.scss */
 .fpanel {
   background: #f2f2f2;
   border: solid 1px #e6e6e6;
@@ -13481,7 +13492,7 @@ h5 span.toggler.toggler.collapsed {
   border-radius: 3px;
 }
 
-/* line 218, ../sass/_site.scss */
+/* line 223, ../sass/_site.scss */
 .fpanel-inside {
   background: #ffffff;
   border: solid 1px #e6e6e6;
@@ -13491,20 +13502,20 @@ h5 span.toggler.toggler.collapsed {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 221, ../sass/_site.scss */
+/* line 226, ../sass/_site.scss */
 .fpanel-inside h3 {
   color: #000;
 }
 
 /**More Info**/
-/* line 226, ../sass/_site.scss */
+/* line 231, ../sass/_site.scss */
 h3.readmore {
   display: inline-block;
   padding-right: 15px;
   padding-bottom: 10px;
 }
 
-/* line 231, ../sass/_site.scss */
+/* line 236, ../sass/_site.scss */
 span.moreinfo {
   border-left: 1px solid;
   border-color: #e5e5e5;
