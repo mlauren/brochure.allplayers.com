@@ -9889,7 +9889,7 @@ pre {
 /* <nav> */
 /* line 24, ../sass/components/modules/_topbar.scss */
 .top-bar {
-  background: black;
+  background: transparent;
   height: 35px;
   line-height: 35px;
   margin: 0 0 0px;
@@ -9922,7 +9922,7 @@ pre {
 }
 /* line 37, ../sass/components/modules/_topbar.scss */
 .top-bar > ul .name img {
-  margin-top: -5px;
+  margin: 0;
   vertical-align: middle;
 }
 /* line 40, ../sass/components/modules/_topbar.scss */
@@ -10512,6 +10512,43 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
   box-shadow: 0 0 0;
 }
 
+/* line 77, ../sass/components/modules/_navbar.scss */
+header section {
+  background: transparent;
+}
+/* line 78, ../sass/components/modules/_navbar.scss */
+header .contain-to-grid {
+  z-index: 999;
+  background: #323232;
+  background: -moz-linear-gradient(top, #323232 0%, black 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #323232), color-stop(100%, black));
+  background: -webkit-linear-gradient(top, #323232 0%, black 100%);
+  background: -o-linear-gradient(top, #323232 0%, black 100%);
+  background: -ms-linear-gradient(top, #323232 0%, black 100%);
+  background: linear-gradient(to bottom, #323232 0%, #000000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color', endColorstr='darken($color,20%)',GradientType=0 );
+  box-shadow: 0 2px 2px #515151;
+  -moz-box-shadow: 0 2px 2px #515151;
+  -webkit-box-shadow: 0 2px 2px #515151;
+  padding: 0;
+  border-bottom: 1px solid #414040;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 81, ../sass/components/modules/_navbar.scss */
+  .top-bar {
+    background: transparent;
+  }
+  /* line 82, ../sass/components/modules/_navbar.scss */
+  .top-bar section {
+    min-height: inherit;
+  }
+  /* line 83, ../sass/components/modules/_navbar.scss */
+  .top-bar section ul.right {
+    background: black;
+    margin-top: 0;
+  }
+}
 /* CSS for jQuery Orbit Plugin 1.4.0
  * Maintained for Foundation. foundation.zurb.com
  * Free to use under the MIT license.
@@ -12458,7 +12495,6 @@ table.hide-for-medium {
     margin-bottom: 0;
     overflow: hidden;
     height: 45px;
-    background: #222222;
     z-index: 999;
     /* Override contain to grid stuff for breakpoint */
     /* Setting up the sliding area */
@@ -13439,8 +13475,8 @@ h5 span.toggler.toggler.collapsed {
   border-radius: 0 0 5px 5px;
   padding: 5px;
   position: absolute;
-  right: 0;
-  top: 35px;
+  right: 24px;
+  top: 36px;
 }
 /* line 204, ../sass/_site.scss */
 .auth .show-for-small ul {
@@ -13464,7 +13500,7 @@ h5 span.toggler.toggler.collapsed {
 @media only screen and (max-width: 767px) {
   /* line 212, ../sass/_site.scss */
   .auth {
-    top: 45px;
+    top: 47px;
   }
 }
 /* line 215, ../sass/_site.scss */
