@@ -202,6 +202,7 @@ h5 {
 	a {margin-top: 10px; border-bottom: 1px solid $midLightGrey; }
 }
 
+/** Login/ User Auth ~**/
 .auth {padding: 5px; float: right;
 	.show-for-small ul {margin: 0;}
 	div.auth.show-for-medium-down {top: 45px;}
@@ -210,8 +211,9 @@ h5 {
 	}
 }
 
-@media only screen and (max-width: $screenSmall - 1) {
-	.auth {top: 47px;}
+/* Media query by association */
+.auth.show-for-small {padding: 0; width: 100%; float: none; background: url(../images/global/bg/low_contrast_linen_bg.png) repeat 0 0; margin: 9px 0 0;
+	ul {@include simpleGradient(#515151); margin: 0;}
 }
 
 .fbanner {

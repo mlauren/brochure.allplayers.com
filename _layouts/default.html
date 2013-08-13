@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 {% include head-tag.snippet %}
-<body style="padding-top: 35px;">
+<body style="padding-top: 52px;">
   <header>
     {% include header.snippet %} 
   </header>
@@ -21,7 +21,13 @@
     </section>
   <!-- // END One columns template with hero -->
   {% endif %}
-  
+  <div class="auth show-for-small row">
+    <ul class="button-group radius even three-up">
+      <li><a class="button secondary round" href="/group_search">Find groups</a></li>
+      <li><a class="button secondary round" href="/user/register">Create account</a></li>
+      <li><a class="button round" href="/user">Login</a></li>
+    </ul>
+  </div>
   {% if page.layout_keyword == 'basic_info' %}
   <!-- // Basic informational page tempalte with right column and hero --> 
     <section id="info-hero-wrapper">
