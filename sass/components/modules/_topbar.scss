@@ -21,7 +21,7 @@
   /* Wrapped around .top-bar to make it fixed at the top */
   .fixed { width: 100%; left: 0; position: fixed; top: 0; z-index: 99; }
   /* <nav> */
-  .top-bar { background: $black; height: $topBarHeight; line-height: $topBarHeight; margin: 0 0 $topBarBtmMargin; padding: 0; width: 100%; position: relative;
+  .top-bar { background: transparent; height: $topBarHeight; line-height: $topBarHeight; margin: 0 0 $topBarBtmMargin; padding: 0; width: 100%; position: relative;
 
     /* Contain width to .row width */
     .contain-to-grid & { max-width: $rowWidth; margin: 0 auto; }
@@ -34,7 +34,7 @@
             img { margin-top: 3px; }
           }
         }
-        img { margin-top: -5px; vertical-align: middle; }
+        img { margin: 0; vertical-align: middle; }
       }
     }
     &.expanded { height: inherit; }
