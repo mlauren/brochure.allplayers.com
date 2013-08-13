@@ -1,5 +1,5 @@
 <div class="fixed">
-  <div class="contain-to-grid">
+  <div id="main-nav" class="contain-to-grid">
     <nav class="top-bar">
       <ul>
         <li class="name">
@@ -89,18 +89,20 @@
         </li>
       </ul>
       </section>
+      <div class="auth">
+        <div class="hide-for-small">
+          <a class="small button secondary round" href="/group_search">Find groups</a>
+          <a class="small button secondary round" href="/user/register">Create account</a>
+          <a class="small button round" href="/user">Login</a>
+        </div>
+        <div class="show-for-small">
+          <ul class="button-group radius">
+            <li><a class="small button secondary round" href="/group_search">Find groups</a></li>
+            <li><a class="button secondary round" href="/user/register">Create account</a></li>
+            <li><a class="button round" href="/user">Login</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <div class="auth">
-      <div class="hide-for-small">
-        <a class="small button secondary" href="/user/register">Create account</a>
-        <a class="small button" href="/user">Login</a>
-      </div>
-      <div class="show-for-small">
-        <ul class="button-group radius">
-          <li><a class="button secondary" href="/user/register">Create account</a></li>
-          <li><a class="button" href="/user">Login</a></li>
-        </ul>
-      </div>
-    </div>
   </div>
 </div>

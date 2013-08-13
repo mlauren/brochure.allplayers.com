@@ -16,6 +16,8 @@
 	}
 }
 
+#main-nav { padding: 8px; }
+
 
 #pre-footer {background: url(../images/global/upper-sep.png) no-repeat center top; padding-top: 50px;
 	.six.columns:first-child {border-right: 2px dotted $grey}
@@ -200,10 +202,10 @@ h5 {
 	a {margin-top: 10px; border-bottom: 1px solid $midLightGrey; }
 }
 
-.auth {background: $secondaryColor; @include bottom-border-radius(5px); padding: 5px; position: absolute; right: 24px; top: 36px;
+.auth {padding: 5px; float: right;
 	.show-for-small ul {margin: 0;}
 	div.auth.show-for-medium-down {top: 45px;}
-	.small.button {padding: 5px 10px; font-size: ms(0); float: left;
+	.small.button {padding: 5px 10px; font-size: ms(0); float: left; margin-left: 5px;
 		&:first-child {margin-right: 5px;}
 	}
 }
