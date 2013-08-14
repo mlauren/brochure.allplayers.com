@@ -7713,7 +7713,7 @@ section#hero-wrapper:before, section#hero-wrapper:after {
 section#hero-wrapper:after {
   clear: both;
 }
-/* line 3, ../sass/components/modules/_hero.scss */
+/* line 2, ../sass/components/modules/_hero.scss */
 section#hero-wrapper h1 {
   color: white;
   text-shadow: 1px 1px #000;
@@ -7722,55 +7722,55 @@ section#hero-wrapper h1 {
   line-height: 60px;
   text-align: center;
 }
-/* line 4, ../sass/components/modules/_hero.scss */
+/* line 3, ../sass/components/modules/_hero.scss */
 section#hero-wrapper p {
   color: white;
   font-size: 17px;
   margin-bottom: 40px;
   text-align: center;
 }
-/* line 5, ../sass/components/modules/_hero.scss */
+/* line 4, ../sass/components/modules/_hero.scss */
 section#hero-wrapper img {
   margin-top: 30px;
   margin-left: 25%;
   width: 50%;
 }
 
-/* line 8, ../sass/components/modules/_hero.scss */
+/* line 7, ../sass/components/modules/_hero.scss */
 section#feature-hero-wrapper {
   background: url(../images/global/bg/low_contrast_linen_bg.png) repeat 0 0;
   padding-bottom: 20px;
 }
-/* line 9, ../sass/components/modules/_hero.scss */
+/* line 8, ../sass/components/modules/_hero.scss */
 section#feature-hero-wrapper #feature-hero {
   min-height: 126px;
 }
-/* line 11, ../sass/components/modules/_hero.scss */
+/* line 10, ../sass/components/modules/_hero.scss */
 section#feature-hero-wrapper #feature-hero h1 {
   color: white;
   font-size: 71px;
   margin-top: 20px;
   line-height: 60px;
 }
-/* line 12, ../sass/components/modules/_hero.scss */
+/* line 11, ../sass/components/modules/_hero.scss */
 section#feature-hero-wrapper #feature-hero h2 {
   color: white;
   font-size: 27px;
 }
-/* line 13, ../sass/components/modules/_hero.scss */
+/* line 12, ../sass/components/modules/_hero.scss */
 section#feature-hero-wrapper #feature-hero img {
   margin-top: 20px;
 }
 
-/* line 17, ../sass/components/modules/_hero.scss */
+/* line 16, ../sass/components/modules/_hero.scss */
 section#info-hero-wrapper {
   background: url(../images/global/bg/low_contrast_linen_bg.png) repeat 0 0;
 }
-/* line 18, ../sass/components/modules/_hero.scss */
+/* line 17, ../sass/components/modules/_hero.scss */
 section#info-hero-wrapper #info-hero {
   height: 126px;
 }
-/* line 20, ../sass/components/modules/_hero.scss */
+/* line 19, ../sass/components/modules/_hero.scss */
 section#info-hero-wrapper #info-hero h1 {
   font-size: 71px;
   color: white;
@@ -7778,23 +7778,23 @@ section#info-hero-wrapper #info-hero h1 {
   margin-bottom: 0;
   line-height: 60px;
 }
-/* line 21, ../sass/components/modules/_hero.scss */
+/* line 20, ../sass/components/modules/_hero.scss */
 section#info-hero-wrapper #info-hero h2 {
   font-size: 37px;
   color: white;
   margin: 0;
 }
 
-/* line 25, ../sass/components/modules/_hero.scss */
+/* line 24, ../sass/components/modules/_hero.scss */
 section#knowledge-hero-wrapper {
   background: url(../images/global/bg/low_contrast_linen_bg.png) repeat 0 0;
 }
-/* line 26, ../sass/components/modules/_hero.scss */
+/* line 25, ../sass/components/modules/_hero.scss */
 section#knowledge-hero-wrapper #knowledge-base-hero {
   height: 126px;
   background: url("../images/knowledge/knowledge-base-hero-bg.png") no-repeat right center;
 }
-/* line 28, ../sass/components/modules/_hero.scss */
+/* line 27, ../sass/components/modules/_hero.scss */
 section#knowledge-hero-wrapper #knowledge-base-hero h1 {
   color: white;
   font-size: 59px;
@@ -7802,13 +7802,53 @@ section#knowledge-hero-wrapper #knowledge-base-hero h1 {
   margin-bottom: 0;
   line-height: 60px;
 }
-/* line 29, ../sass/components/modules/_hero.scss */
+/* line 28, ../sass/components/modules/_hero.scss */
 section#knowledge-hero-wrapper #knowledge-base-hero h2 {
   color: white;
   font-size: 37px;
   margin: 0;
 }
 
+@media only screen and (max-width: 767px) {
+  /* line 33, ../sass/components/modules/_hero.scss */
+  section#hero-wrapper {
+    *zoom: 1;
+    background: #474747;
+    background: url(../images/hero/homepage-hero-bg.png) no-repeat 50% -40px, url(../images/global/bg/low_contrast_linen_bg.png) repeat 0 0;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+  }
+  /* line 4, ../sass/mixins/_clearfix.scss */
+  section#hero-wrapper:before, section#hero-wrapper:after {
+    content: " ";
+    display: table;
+  }
+  /* line 5, ../sass/mixins/_clearfix.scss */
+  section#hero-wrapper:after {
+    clear: both;
+  }
+  /* line 34, ../sass/components/modules/_hero.scss */
+  section#hero-wrapper h1 {
+    color: white;
+    text-shadow: 1px 1px #000;
+    font-size: 37px;
+    margin: 40px 0 20px 0;
+    line-height: 60px;
+    text-align: center;
+  }
+  /* line 35, ../sass/components/modules/_hero.scss */
+  section#hero-wrapper p {
+    color: white;
+    font-size: 17px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  /* line 36, ../sass/components/modules/_hero.scss */
+  section#hero-wrapper img {
+    margin: 0;
+    width: 100%;
+  }
+}
 /* line 2, ../sass/components/modules/_findgroup.scss */
 #findGroup h2 {
   margin: 10px 0 10px 0;
@@ -13331,11 +13371,71 @@ h5 span.toggler.toggler.collapsed {
 
 @media only screen and (max-width: 767px) {
   /* line 223, ../sass/_site.scss */
+  #homepage-intro {
+    *zoom: 1;
+    padding-top: 35px;
+    margin-bottom: 40px;
+  }
+  /* line 4, ../sass/mixins/_clearfix.scss */
+  #homepage-intro:before, #homepage-intro:after {
+    content: " ";
+    display: table;
+  }
+  /* line 5, ../sass/mixins/_clearfix.scss */
+  #homepage-intro:after {
+    clear: both;
+  }
+  /* line 224, ../sass/_site.scss */
+  #homepage-intro h1 {
+    *zoom: 1;
+    margin-top: 0;
+    font-size: 37px;
+    margin-bottom: 0;
+  }
+  /* line 4, ../sass/mixins/_clearfix.scss */
+  #homepage-intro h1:before, #homepage-intro h1:after {
+    content: " ";
+    display: table;
+  }
+  /* line 5, ../sass/mixins/_clearfix.scss */
+  #homepage-intro h1:after {
+    clear: both;
+  }
+  /* line 225, ../sass/_site.scss */
+  #homepage-intro p {
+    font-size: 17px;
+  }
+  /* line 226, ../sass/_site.scss */
+  #homepage-intro .eight.columns {
+    padding-right: 120px;
+  }
+  /* line 227, ../sass/_site.scss */
+  #homepage-intro .what-is-more-info {
+    display: none;
+  }
+  /* line 228, ../sass/_site.scss */
+  #homepage-intro .more-info-button {
+    font-weight: bold;
+  }
+
+  /* line 231, ../sass/_site.scss */
   .auth {
     top: 47px;
   }
+
+  /* line 235, ../sass/_site.scss */
+  #feature-tour .tabs .you-tab {
+    width: inherit;
+    margin-left: inherit;
+  }
+  /* line 236, ../sass/_site.scss */
+  #feature-tour .tabs .enterprise-tab {
+    width: inherit;
+    margin-right: inherit;
+    margin-left: inherit;
+  }
 }
-/* line 226, ../sass/_site.scss */
+/* line 241, ../sass/_site.scss */
 .fbanner {
   background-color: #000;
   opacity: 0.8;
@@ -13350,7 +13450,7 @@ h5 span.toggler.toggler.collapsed {
   font-style: italic;
 }
 
-/* line 231, ../sass/_site.scss */
+/* line 246, ../sass/_site.scss */
 .fpanel {
   background: #f2f2f2;
   border: solid 1px #e6e6e6;
@@ -13361,7 +13461,7 @@ h5 span.toggler.toggler.collapsed {
   border-radius: 3px;
 }
 
-/* line 234, ../sass/_site.scss */
+/* line 249, ../sass/_site.scss */
 .fpanel-inside {
   background: #ffffff;
   border: solid 1px #e6e6e6;
@@ -13371,20 +13471,20 @@ h5 span.toggler.toggler.collapsed {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 237, ../sass/_site.scss */
+/* line 252, ../sass/_site.scss */
 .fpanel-inside h3 {
   color: #000;
 }
 
 /**More Info**/
-/* line 242, ../sass/_site.scss */
+/* line 257, ../sass/_site.scss */
 h3.readmore {
   display: inline-block;
   padding-right: 15px;
   padding-bottom: 10px;
 }
 
-/* line 247, ../sass/_site.scss */
+/* line 262, ../sass/_site.scss */
 span.moreinfo {
   border-left: 1px solid;
   border-color: #e5e5e5;
