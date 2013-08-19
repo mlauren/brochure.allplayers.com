@@ -6,7 +6,7 @@ permalink: ./:title.html
 img: images/global/header-logo.png
 branding_url: branding_index.html
 paginate: 2
-url: /brochure/
+url: /brochure
 
 basic_user_videos:
    - title: this is a title
