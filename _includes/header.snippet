@@ -3,7 +3,7 @@
     <nav class="top-bar">
       <ul>
         <li class="name">
-          <a href="{{ site.url }}"> <img src="{{ site.img }}" /> </a>
+          <a href="{{ site.url }}/"> <img src="{{ site.img }}" /> </a>
         </li>
         <li class="toggle-topbar"><a href="#"></a></li>
       </ul>
@@ -19,7 +19,7 @@
                   {% for item in site.pages %}
                     {% if item.tags contains 'for_you' %}
                       {% if item.root != 'enabled' %}
-                        <li><a href="{{ site.url }}{{ item.url }}/">{{ item.title }}</a></li>
+                        <li><a href="{{ site.url }}{{ item.url }}">{{ item.title }}</a></li>
                       {% endif %}
                     {% endif %}
                   {% endfor %}
@@ -40,7 +40,7 @@
             </ul>
         </li>
         <li class="has-dropdown">
-            <a class="active" href="knowledge-base">Knowledge base</a>
+            <a class="active" href="knowledge-base/index.html">Knowledge base</a>
             <ul class="dropdown">
               <li class="has-dropdown">
                 <a href="knowledge-base/basic-user-knowledge/">Basic User Knowledge</a>
