@@ -1,0 +1,8 @@
+<script type='text/javascript'>
+  (function() {
+    var tag = document.createElement('base');
+    tag.href = 'https://' + location.hostname + '/brochure/';
+    var firstScriptTag = document.getElementsByTagName('head')[0];
+    firstScriptTag.appendChild(tag);
+  }());
+</script>
