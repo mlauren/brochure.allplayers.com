@@ -13529,7 +13529,7 @@ div.kbImageLarge {
   position: absolute;
   left: -600px;
   top: -70px;
-  z-index: 99999999999999;
+  z-index: 999;
   display: block;
   border: solid 4px #fff;
   -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
