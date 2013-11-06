@@ -113,6 +113,7 @@ section#info-content {padding-top: 25px; background: url("../images/global/sep.p
 }
 
 section#knowledge-content {
+    overflow: visible;
 	#knowledge-hp-block {margin-top: 20px;
 		h4 {color: $secondaryColor; border-bottom: 5px solid $lightGrey; margin-bottom: 0;
 			a {font-size: ms(0); line-height: 30px;}
@@ -297,7 +298,7 @@ div.kbImageLarge {
   position: absolute;
   left: -600px;
   top: -70px;
-  z-index: 999;
+  z-index: 99999999999999;
 
   display: block;
   border: solid 4px #fff;
