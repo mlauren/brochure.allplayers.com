@@ -13500,10 +13500,6 @@ span.moreinfo {
 /**Popout Images**/
 /* line 271, ../sass/_site.scss */
 .kbImage {
-  width: 300px;
-  height: auto;
-  float: left;
-  position: relative;
   display: block;
   border: solid 4px #fff;
   -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
@@ -13520,30 +13516,34 @@ span.moreinfo {
   -moz-transition-duration: 300ms;
   -o-transition-duration: 300ms;
   transition-duration: 300ms;
+  width: 300px;
+  height: auto;
+  float: left;
+  position: relative;
 }
 
-/* line 295, ../sass/_site.scss */
+/* line 280, ../sass/_site.scss */
 div.kbImageLarge {
+  display: block;
+  border: solid 4px #fff;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition-property: box-shadow;
+  -moz-transition-property: box-shadow;
+  -o-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 300ms;
+  -moz-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  transition-duration: 300ms;
   width: 610px;
   height: auto;
   position: absolute;
   left: -600px;
   top: -70px;
   z-index: 999;
-  display: block;
-  border: solid 4px #fff;
-  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-transition-property: box-shadow;
-  -moz-transition-property: box-shadow;
-  -o-transition-property: box-shadow;
-  transition-property: box-shadow;
-  -webkit-transition-duration: 300ms;
-  -moz-transition-duration: 300ms;
-  -o-transition-duration: 300ms;
-  transition-duration: 300ms;
 }
