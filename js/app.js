@@ -44,13 +44,13 @@ $(function() {
 });
 
 $(function(){
-    $('.kbImage').hover(
-        function(){
-            $(this).next().slideDown();
-        },
-        function() {
-            $(this).next().slideUp();
-        }
-    );
+  $('.kbImage').hover(
+    function(){
+      $(this).next().slideDown();
+    },
+    function() {
+      $(this).next().slideUp();
+    }
+  );
 });
 
