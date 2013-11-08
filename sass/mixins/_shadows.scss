@@ -20,21 +20,21 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color', endColorstr='darken($color,20%)',GradientType=0 );
 }
 
-@mixin imageBorder() {
+@mixin imageBorder($borderColor, $shadowColor, $borderRadius, $transitionDuration) {
   display: block;
-  border: solid 4px #fff;
-  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
+  border: solid 4px $borderColor;
+  -webkit-box-shadow: 0 0 0 1px $shadowColor;
+  -moz-box-shadow: 0 0 0 1px $shadowColor;
+  box-shadow: 0 0 0 1px $shadowColor;
+  -moz-border-radius: $borderRadius;
+  -webkit-border-radius: $borderRadius;
+  border-radius: $borderRadius;
   -webkit-transition-property: box-shadow;
   -moz-transition-property: box-shadow;
   -o-transition-property: box-shadow;
   transition-property: box-shadow;
-  -webkit-transition-duration: 300ms;
-  -moz-transition-duration: 300ms;
-  -o-transition-duration: 300ms;
-  transition-duration: 300ms;
+  -webkit-transition-duration: $transitionDuration;
+  -moz-transition-duration: $transitionDuration;
+  -o-transition-duration: $transitionDuration;
+  transition-duration: $transitionDuration;
 }

@@ -13501,7 +13501,7 @@ span.moreinfo {
 /* line 271, ../sass/_site.scss */
 .kbImage {
   display: block;
-  border: solid 4px #fff;
+  border: solid 4px white;
   -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
@@ -13522,10 +13522,10 @@ span.moreinfo {
   position: relative;
 }
 
-/* line 280, ../sass/_site.scss */
+/* line 275, ../sass/_site.scss */
 div.kbImageLarge {
   display: block;
-  border: solid 4px #fff;
+  border: solid 4px white;
   -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
@@ -13546,4 +13546,5 @@ div.kbImageLarge {
   left: -600px;
   top: -70px;
   z-index: 999;
+  display: none;
 }
