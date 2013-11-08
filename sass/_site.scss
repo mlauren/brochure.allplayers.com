@@ -113,6 +113,7 @@ section#info-content {padding-top: 25px; background: url("../images/global/sep.p
 }
 
 section#knowledge-content {
+    overflow: visible;
 	#knowledge-hp-block {margin-top: 20px;
 		h4 {color: $secondaryColor; border-bottom: 5px solid $lightGrey; margin-bottom: 0;
 			a {font-size: ms(0); line-height: 30px;}
@@ -265,3 +266,12 @@ span.moreinfo {
     padding: 7px;
     padding-left: 15px;
 	}
+
+/**Popout Images**/
+.kbImage {
+  @include imageBorder(#fff, rgba(0, 0, 0, 0.2), 3px, 300ms); width: 300px; height: auto; float: left; position: relative;
+}
+
+div.kbImageLarge {
+  @include imageBorder(#fff, rgba(0, 0, 0, 0.2), 3px, 300ms); width: 610px; height: auto; position: absolute; left: -600px; top: -70px; z-index: 999; display: none;
+}
