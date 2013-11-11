@@ -13489,7 +13489,7 @@ h3.readmore {
   padding-bottom: 10px;
 }
 
-/* line 273, ../sass/_site.scss */
+/* line 274, ../sass/_site.scss */
 span.moreinfo {
   border-left: 1px solid;
   border-color: #e5e5e5;
@@ -13498,7 +13498,7 @@ span.moreinfo {
 }
 
 /**Popout Images**/
-/* line 281, ../sass/_site.scss */
+/* line 282, ../sass/_site.scss */
 .kbImage {
   display: block;
   border: solid 4px white;
@@ -13522,7 +13522,7 @@ span.moreinfo {
   position: relative;
 }
 
-/* line 285, ../sass/_site.scss */
+/* line 286, ../sass/_site.scss */
 div.kbImageLarge {
   display: block;
   border: solid 4px white;
