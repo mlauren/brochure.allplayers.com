@@ -113,6 +113,7 @@ section#info-content {padding-top: 25px; background: url("../images/global/sep.p
 }
 
 section#knowledge-content {
+    overflow: visible;
 	#knowledge-hp-block {margin-top: 20px;
 		h4 {color: $secondaryColor; border-bottom: 5px solid $lightGrey; margin-bottom: 0;
 			a {font-size: ms(0); line-height: 30px;}
@@ -268,51 +269,9 @@ span.moreinfo {
 
 /**Popout Images**/
 .kbImage {
-  width: 300px;
-  height: auto;
-  float: left;
-  position: relative;
-
-  display: block;
-  border: solid 4px #fff;
-  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-transition-property: box-shadow;
-  -moz-transition-property: box-shadow;
-  -o-transition-property: box-shadow;
-  transition-property: box-shadow;
-  -webkit-transition-duration: 300ms;
-  -moz-transition-duration: 300ms;
-  -o-transition-duration: 300ms;
-  transition-duration: 300ms;
+  @include imageBorder(#fff, rgba(0, 0, 0, 0.2), 3px, 300ms); width: 300px; height: auto; float: left; position: relative;
 }
 
 div.kbImageLarge {
-  width: 610px;
-  height: auto;
-  position: absolute;
-  left: -600px;
-  top: -70px;
-  z-index: 999;
-
-  display: block;
-  border: solid 4px #fff;
-  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-transition-property: box-shadow;
-  -moz-transition-property: box-shadow;
-  -o-transition-property: box-shadow;
-  transition-property: box-shadow;
-  -webkit-transition-duration: 300ms;
-  -moz-transition-duration: 300ms;
-  -o-transition-duration: 300ms;
-  transition-duration: 300ms;
+  @include imageBorder(#fff, rgba(0, 0, 0, 0.2), 3px, 300ms); width: 610px; height: auto; position: absolute; left: -600px; top: -70px; z-index: 999; display: none;
 }
