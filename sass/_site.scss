@@ -286,3 +286,6 @@ span.moreinfo {
 div.kbImageLarge {
   @include imageBorder(#fff, rgba(0, 0, 0, 0.2), 3px, 300ms); width: 610px; height: auto; position: absolute; left: -600px; top: -70px; z-index: 999; display: none;
 }
+
+/**Underline**/
+.underline { text-decoration: underline; }
