@@ -1,7 +1,7 @@
 ---
 layout: default
 layout_keyword: knowledge_base_page
-title: Set up "no fee" group registration
+title: Set up individual registration.
 tags: group_admin_pages
 left_col_section_nav: [admin_user_nav]
 user_help_videos: [admin_user_videos]
@@ -11,7 +11,7 @@ user_help_videos: [admin_user_videos]
 
   <h2>{{ page.title }}</h2>
   <p>Once you have created your group at AllPlayers.com, you'll want members to join your group!</p>
-  <p>To allow people to join your group, you will need to enable registration. With AllPlayers.com, you can have free group registration, or you can require that members pay a fee to join the group.</p>
+  <p>To allow people to join your group, you will need to enable registration. With AllPlayers.com, you can have free registration, or you can require that members pay a fee to join the group.</p>
   <p>In this section, we will focus on enabling registration for a group that does not require fees to join.</p>
   <p>While there are many ways to set up registration for leagues and teams, in this example, we will enable registration to allow players, parents and fans to join a team.</p>
   <hr />
@@ -58,7 +58,7 @@ user_help_videos: [admin_user_videos]
   <p>The registration description is the message that is displayed to logged out users when visiting your registration page.</p>
 
   <h4>Registration Fees</h4>
-  <p>This will let you know if you have the ability to receive registration fees from group registrants.</p>
+  <p>This will let you know if you have the ability to receive registration fees from registrants.</p>
   <p>If you see <strong>Enabled</strong>, you already have the ability to receive registration fees. If you see <strong>Requested</strong>, you have requested this ability but are not yet able to receive registration fees. If you see <strong>Disabled</strong>, you can request the ability to receive registration fees by clicking <strong>Edit</strong>, and then check the box next to <strong>Request fee capability</strong>.</p>
 
   <h4>Registration Button Text</h4>
@@ -111,14 +111,14 @@ user_help_videos: [admin_user_videos]
   </div>
   </br>
   <div class="twelve columns alert-box">
-    <p>You can change the name of any default roles to suit the needs of your group. In your <i>Group Toolbox</i> under <strong>Administrative Tools</strong>, choose <strong>Members</strong>. Click <strong>Roles</strong> in the navigation bar, then click <strong>Edit Roles</strong>. Click the <i>edit</i> link for a role to change its name.</p>
+    <p>You can change the name of any default roles to suit the needs of your group. In your <i>Group Toolbox</i> under <strong>Administrative Tools</strong>, choose <strong>Roles</strong>, then click <strong>Edit Roles</strong>. Click the <i>edit</i> link for a role to change its name.</p>
   </div>
 
   <h4>Registration Form:</h4>
   <p>If your group needs to collect data from your members as they register for your group, you can <i>Add a Registration</i> Form to request this information. If your group is related to other groups that already have registration forms, you can choose a preexisting form.</p>
 
   <h4>Age Requirements</h4>
-  <p>If a role is age-restricted, choose you minimum and maximum ages. <i>TIP: If your league allows players to "play up" to the next age level, ensure that your minimum age is set to allow younger players to join the group</i>.</p>
+  <p>If a role is age-restricted, choose the minimum and maximum ages. <i>TIP: If your league allows players to "play up" to the next age level, ensure that your minimum age is set to allow younger players to join the group</i>.</p>
 
   <h4>Gender Requirements</h4>
   <p>Restrict your role to allow only males or females in a given role (for example, players in a girls' basketball league) if necessary.</p>
@@ -133,13 +133,14 @@ user_help_videos: [admin_user_videos]
   <p>Give this link to registrants to bring them directly to this role when registering for your group.</p>
 
   <h4>Skip role selection</h4>
-  <p>Enabling this setting will skip the role selection page if the user comes to registration using the Direct Role Registration URL.</p>
+  <p>Enabling this setting will skip the role selection page.</p>
+  <p><i>Warning: This should only be used when there is only one role available with no fee attached.</i></p>
 
   <h4>Hide role selection</h4>
   <p>If you do not want to show a role on your registration page for your group, check this box. Then provide the Direct Role Registration URL to the person(s) you want to register for this role.</p>
 
   <h4>Challenge Code</h4>
-  <p>If you only want certain people to register for a specific role in your group, enable the challenge code and enter a code of your choice. Provide this code to a user to restrict registration to only those who know the code.</p>
+  <p>If you only want certain people to register for a specific role in your group, enable the challenge code and enter a code of your choice. Provide this code to a user to restrict registration to only those who know the code. The role will only become visible once the challenge code is entered.</p>
 
   <h4>Allow when registering others</h4>
   <p>For current group members who have the permission to register other users to this group, this role can only be added by them if this option is enabled.</p>
@@ -149,6 +150,9 @@ user_help_videos: [admin_user_videos]
 
   <h4>Additional role when payment complete</h4>
   <p>For roles with registration fees attached, assign an additional role to the registrant once they have completed payment.</p>
+
+  <h4>Do not assign this role until fees are paid</h4>
+  <p>This role will not be assigned to the registrant until the registration fee is paid.</p>
 
   <h3>Save Settings and Enable Registration</h3>
 
@@ -187,5 +191,9 @@ user_help_videos: [admin_user_videos]
         <img src="images/knowledge/group_admin-reg-registration_button_dashboard-large.jpg">
       </div>
     </div>
+  </div>
+  <br />
+  <div class="twelve columns alert-box">
+    <p>If you need to enable group registration, check out our guide <a href="knowledge-base/group-admin-knowledge/pages/1-group-admin-guide/configure-group-registration.html">here</a>.</p>
   </div>
 </div>
