@@ -79,8 +79,6 @@
           {% if page.tags == 'group_admin_pages' %}{% include admin_user_nav.snippet %}{% endif %}
         </div>
         <div class="nine columns">
-          {% if page.tags == 'basic_user_pages' %}<div id="video-block">{% include basic_user_videos.snippet %}</div>{% endif %}
-          {% if page.tags == 'group_admin_pages' %}<div id="video-block">{% include admin_user_videos.snippet %}</div>{% endif %}
           {{ content }} 
         </div>
       </div>
