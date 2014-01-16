@@ -13528,6 +13528,7 @@ span.moreinfo {
   height: auto;
   float: left;
   position: relative;
+  cursor: pointer;
 }
 
 /* line 290, ../sass/_site.scss */
@@ -13555,6 +13556,7 @@ div.kbImageLarge {
   top: -70px;
   z-index: 999;
   display: none;
+  cursor: pointer;
 }
 
 /**Underline**/

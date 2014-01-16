@@ -284,11 +284,11 @@ span.moreinfo {
 
 /**Popout Images**/
 .kbImage {
-  @include imageBorder(#fff, rgba(0, 0, 0, 0.2), 3px, 300ms); width: 300px; height: auto; float: left; position: relative;
+  @include imageBorder(#fff, rgba(0, 0, 0, 0.2), 3px, 300ms); width: 300px; height: auto; float: left; position: relative; cursor: pointer;
 }
 
 div.kbImageLarge {
-  @include imageBorder(#fff, rgba(0, 0, 0, 0.2), 3px, 300ms); width: 610px; height: auto; position: absolute; left: -600px; top: -70px; z-index: 999; display: none;
+  @include imageBorder(#fff, rgba(0, 0, 0, 0.2), 3px, 300ms); width: 610px; height: auto; position: absolute; left: -600px; top: -70px; z-index: 999; display: none; cursor: pointer;
 }
 
 /**Underline**/
