@@ -54,3 +54,20 @@ $(function(){
   );
 });
 
+$(function() {
+  if ($( window ).width() <= 760) {
+    $('body').css('padding-top', '100px')
+  }
+  else {
+    $('body').css('padding-top', '50px')
+  }
+});
+
+// Modals in HTML included using Jekyll don't work because they aren't a direct child of the body, this fixes that.
+$(function() {
+  $('.blockModalLink').click(
+    function() {
+      $('.blockModal').appendTo(document.body);
+    }
+  )
+});
