@@ -13570,3 +13570,28 @@ div.kbImageLarge {
 .inlineIcon {
   width: 40px;
 }
+
+/**Brochure Screenshots**/
+/* line 301, ../sass/_site.scss */
+.brochureScreenshot {
+  display: block;
+  border: solid 4px white;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition-property: box-shadow;
+  -moz-transition-property: box-shadow;
+  -o-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 300ms;
+  -moz-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  transition-duration: 300ms;
+  width: 900px;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
