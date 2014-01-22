@@ -1,9 +1,9 @@
-  <base id="basetag" href="/brochure/">
-  <script type='text/javascript'>
-    (function() {
-      var tag = document.getElementById('basetag');
-      tag.href = location.protocol + '//' + location.host + '/brochure/';
-      var firstScriptTag = document.getElementsByTagName('head')[0];
-      firstScriptTag.appendChild(tag);
-    }());
-  </script>
+<base id="basetag" href="/brochure/">
+<script type='text/javascript'>
+  (function() {
+    var tag = document.getElementById('basetag');
+    tag.href = location.protocol + '//' + location.host + '/brochure/';
+    var firstScriptTag = document.getElementsByTagName('head')[0];
+    firstScriptTag.appendChild(tag);
+  }());
+</script>
