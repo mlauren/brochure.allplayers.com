@@ -47,6 +47,7 @@ $(function() {
 $(document).ready( function() {
 
   $('.kbImage').click( function(event) {
+
     // Check if the corresponding large popup image for the currently clicked image is already open.
     var visible = false;
     if ($(this).next().is(':visible')) {
