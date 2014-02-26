@@ -24,6 +24,15 @@
 </div>
 {% endif %}
 
+{% if page.layout_keyword == 'partner_feature_onecol' %}
+<div class="row partner-feature">
+  <div class="twelve mobile-four columns">
+    <h1>{{ page.title }}</h1>
+    <h3>{{ page.tagline }}</h3>
+  </div>
+</div>
+{% endif %}
+
 {% if page.layout_keyword == 'knowledge_base' %}
 <div class="row" id="knowledge-base-hero">
   <div class="twelve columns">
