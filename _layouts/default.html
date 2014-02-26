@@ -5,7 +5,7 @@
   <header>
     {% include header.snippet %} 
   </header>
-  {% if page.layout_keyword == 'one_column' %}
+  {% if page.layout_keyword == 'one_column' or 'partner_feature_onecol' %}
   <!-- // One column template with hero --> 
     {% if page.hero_image != null %}
       <section id="hero-wrapper">
