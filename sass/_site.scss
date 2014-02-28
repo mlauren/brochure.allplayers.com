@@ -1,9 +1,14 @@
 
 /* Partners ------------------------------------------- */
 section.partners-ss, div.partners-ss  {
-  h1, h2, h3, h4, h5, h6 {color: $SSMainColor;}
+  h1, h2, h3, h4, h5, h6 {color: $SSMainColor; text-align: center;}
+  img {padding-bottom: 20px;}
+}
+section#hero-wrapper.ss-feature-partner {background: darken($lightGrey, 5%);
+  div.partners-ss {background: $lightGrey;}
 }
 
+/* Homepage ------------------------------------------- */
 #homepage-intro { @include clearfix(); padding-top: 35px; margin-bottom: 40px;
   h1 { @include clearfix(); margin-top: 0; margin-bottom: 0; }
   p { font-size: ms(1); }

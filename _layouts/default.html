@@ -8,7 +8,7 @@
   {% if page.layout_keyword == 'one_column' or 'partner_feature_onecol' %}
   <!-- // One column template with hero --> 
     {% if page.hero_image != null %}
-      <section id="hero-wrapper">
+      <section id="hero-wrapper" {% if page.layout_keyword == 'partner_feature_onecol' %}class="ss-feature-partner" {% endif %}>
         {% include hero.snippet %}
       </section>
     {% endif %}
