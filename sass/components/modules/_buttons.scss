@@ -1,9 +1,10 @@
 
 /* Partners ------------------------------------------- */
 section.partners-ss, div.partners-ss {
-  .button { @include simpleGradient(lighten($SSMainColor, 10%)); border: 1px solid darken(($SSMainColor), 15%);
+  .button { font-family: $SSHeaderFont; @include simpleGradient(lighten($SSMainColor, 10%)); border: 1px solid darken(($SSMainColor), 15%);
     &:hover, &:focus { @include simpleGradient($SSMainColor); }
   }
+  .button.large {font-size: 21px;}
 }
 
 /* Normal Buttons ---------------------- */
