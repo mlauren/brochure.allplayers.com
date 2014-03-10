@@ -1,9 +1,10 @@
-
 /* Partners ------------------------------------------- */
 section.partners-ss, div.partners-ss  {
-  h1, h2, h3, h4, h5, h6 {color: $SSMainColor; text-align: center;}
+  h1, h2, h3, h4, h5, h6 {color: $SSMainColor; text-align: center; font-family: $SSHeaderFont; font-weight: bold;}
   img {padding-bottom: 20px;}
+  h3 {font-size: 26px;}
 }
+
 section#hero-wrapper.ss-feature-partner {background: darken($lightGrey, 5%);
   div.partners-ss {background: $lightGrey;}
 }
