@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
 {% include head-tag.snippet %}
-<body>
-  <header>
-    {% include header.snippet %} 
-  </header>
+
+  <body{% if page.no_header == true %} class="no-header"{% endif %}>
+
+  {% if page.no_header != true %}
+    <header>
+      {% include header.snippet %}
+    </header>
+  {% endif %}
+
   {% if page.layout_keyword == 'one_column' or page.layout_keyword == 'partner_feature_onecol' %}
   <!-- // One column template with hero --> 
     {% if page.hero_image != null %}
@@ -125,10 +130,12 @@
     </section>
   <!-- // END Features page template with right column and hero -->
   {% endif %}
-  {% include demo.snippet %}
-  <footer>
-    {% include footer.snippet %}
-  </footer>
+  {% if page.no_header != true %}
+    {% include demo.snippet %}
+    <footer>
+      {% include footer.snippet %}
+    </footer>
+  {% endif %}
     <script>
       $(document).ready(function(){
         $('#features').click(function(){

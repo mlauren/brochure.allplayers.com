@@ -1,11 +1,13 @@
 section#hero-wrapper {@include clearfix(); background: $darkGrey; background: url(../images/hero/homepage-hero-bg.png) no-repeat 50% -40px, url(../images/global/bg/low_contrast_linen_bg.png) repeat 0 0; margin-bottom: 0;
   h1 {color: $white; text-shadow: 1px 1px #000; font-size: ms(7); margin: 70px 0 20px 0; line-height: 60px; text-align: center;}
   p {color: $white; font-size: ms(1); margin-bottom: 40px; text-align: center;}
-  img {margin-top: 30px; margin-left: 25%; width: 50%;}
+  img {margin-bottom: -20px; width: 33%;}
   // Specialized styles for apci partners.
   .partner-feature {
-    h1, h2, h3, h4, h5 {text-align: center;}
+    h1, h2, h3, h4, h5 {text-align: left;}
   }
+  .feature-hero-wrapper-img {text-align: center;}
+  .feature-hero-wrapper-desc {margin-top: 20px;}
 }
 
 .panel.activate-login {
@@ -13,7 +15,21 @@ section#hero-wrapper {@include clearfix(); background: $darkGrey; background: ur
 }
 
 ul.featured-list {
-  li {font-weight: 600;}
+  li {font-weight: 600; list-style-type: none;
+    &:before {
+      content:'\2022';
+      /* For a square bullet */
+      /*content:'\25A0';*/
+      display: block;
+      position: relative;
+      max-width: 0px;
+      max-height: 0px;
+      left: -15px;
+      top: -5px;
+      color: $SSMainColor;
+      font-size: 20px;
+    }
+  }
 }
 
 section#feature-hero-wrapper {background: url(../images/global/bg/low_contrast_linen_bg.png) repeat 0 0; padding-bottom: 20px;
