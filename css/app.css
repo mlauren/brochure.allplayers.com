@@ -7841,13 +7841,12 @@ section#hero-wrapper p {
 }
 /* line 4, ../sass/components/modules/_hero.scss */
 section#hero-wrapper img {
-  margin-top: 30px;
-  margin-left: 25%;
-  width: 50%;
+  margin-bottom: -20px;
+  width: 33%;
 }
 /* line 7, ../sass/components/modules/_hero.scss */
 section#hero-wrapper .partner-feature h1, section#hero-wrapper .partner-feature h2, section#hero-wrapper .partner-feature h3, section#hero-wrapper .partner-feature h4, section#hero-wrapper .partner-feature h5 {
-  text-align: center;
+  text-align: left;
 }
 
 /* line 11, ../sass/components/modules/_hero.scss */
@@ -8033,31 +8032,14 @@ section#knowledge-hero-wrapper #knowledge-base-hero h2 {
 /* Partners ------------------------------------------- */
 /* line 4, ../sass/components/modules/_buttons.scss */
 section.partners-ss .button, div.partners-ss .button {
+  text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  background: #e85d4a;
-  background: -moz-linear-gradient(top, #e85d4a 0%, #b52a17 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e85d4a), color-stop(100%, #b52a17));
-  background: -webkit-linear-gradient(top, #e85d4a 0%, #b52a17 100%);
-  background: -o-linear-gradient(top, #e85d4a 0%, #b52a17 100%);
-  background: -ms-linear-gradient(top, #e85d4a 0%, #b52a17 100%);
-  background: linear-gradient(to bottom, #e85d4a 0%, #b52a17 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color', endColorstr='darken($color,20%)',GradientType=0 );
-  border: 1px solid #9e2414;
-}
-/* line 5, ../sass/components/modules/_buttons.scss */
-section.partners-ss .button:hover, section.partners-ss .button:focus, div.partners-ss .button:hover, div.partners-ss .button:focus {
-  background: #e2341d;
-  background: -moz-linear-gradient(top, #e2341d 0%, #881f11 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e2341d), color-stop(100%, #881f11));
-  background: -webkit-linear-gradient(top, #e2341d 0%, #881f11 100%);
-  background: -o-linear-gradient(top, #e2341d 0%, #881f11 100%);
-  background: -ms-linear-gradient(top, #e2341d 0%, #881f11 100%);
-  background: linear-gradient(to bottom, #e2341d 0%, #881f11 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color', endColorstr='darken($color,20%)',GradientType=0 );
+  background: #ea2b1c;
+  border: 1px solid #aa1b10;
 }
 /* line 7, ../sass/components/modules/_buttons.scss */
 section.partners-ss .button.large, div.partners-ss .button.large {
-  font-size: 21px;
+  font-size: 16px;
 }
 
 /* Normal Buttons ---------------------- */
@@ -13068,14 +13050,15 @@ footer .footer-branding {
 /* Partners ------------------------------------------- */
 /* line 3, ../sass/_site.scss */
 section.partners-ss h1, section.partners-ss h2, section.partners-ss h3, section.partners-ss h4, section.partners-ss h5, section.partners-ss h6, div.partners-ss h1, div.partners-ss h2, div.partners-ss h3, div.partners-ss h4, div.partners-ss h5, div.partners-ss h6 {
-  color: #e2341d;
-  text-align: center;
+  color: #ea2b1c;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+  text-transform: uppercase;
 }
 /* line 4, ../sass/_site.scss */
 section.partners-ss img, div.partners-ss img {
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 /* line 5, ../sass/_site.scss */
 section.partners-ss h3, div.partners-ss h3 {
