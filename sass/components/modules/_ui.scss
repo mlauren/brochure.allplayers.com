@@ -79,7 +79,10 @@
   /* Panels ---------------------- */
 
   .panel { background: darken($white, 5%); border: solid 1px darken($white, 10%); margin: 0 0 22px 0; padding: 20px; @include border-radius(3px);
-
+    &.white { background: $white; }
+    &.special-header { border: 1px solid #ccc;
+      h5 {margin: -20px -20px 10px; padding: 10px; background: darken($white, 5%); font-family: $bodyFontFamily; color: $bodyFontColor; border-bottom: 1px solid #ccc;}
+    }
     > :first-child { margin-top: 0; }
     > :last-child { margin-bottom: 0; }
 
@@ -149,20 +152,21 @@
   }
 
   /* Pagination ---------------------- */
-
-  ul.pagination { display: block; height: 24px; margin-#{$defaultFloat}: -5px;
-
-    li { float: $defaultFloat; display: block; height: 24px; color: #999; font-size: ms(0); margin-#{$defaultFloat}: 5px;
-
-      a { display: block; padding: 1px 7px 1px; color: #555; }
-      &:hover a, a:focus { background: darken($white, 10%); }
-      &.unavailable a { cursor: default; color: #999; }
-      &.unavailable:hover a, &.unavailable a:focus { background: transparent; }
-      &.current a { background: $mainColor; color: $white; font-weight: bold; cursor: default;
+  ul.pagination { padding: 0; margin-top: 10px; display: block; height: 24px; margin-#{$defaultFloat}: -5px; padding: 0 10px;
+    li { float: $defaultFloat; display: block; height: 28px; color: #999; font-size: ms(0); margin-#{$defaultFloat}: 5px; border: 1px solid $grey;
+      &.arrow {font-size: ms(1)/1.5; line-height: 22px;
+        &.small {font-size: ms(1)/2; line-height: 22px;}
+        a {color: $darkGrey !important;}
+      }
+      &.pager-ellipsis {background: darken($lightGrey, 2%); padding: 1px 7px 1px;}
+      a, span.empty-arrow-wrapper { display: block; padding: 1px 7px 1px; color: #555 !important; background: mix($mainColor, $lightGrey, .5); border: 1px solid $white;}
+      span.empty-arrow-wrapper {color: $grey !important;}
+      &:hover a, a:focus { background: darken($lightGrey, 10%); }
+      &.unavailable a { cursor: default; color: #999 !important; }
+      &.current a { background: $mainColor; color: $white !important; font-weight: bold; cursor: default;
         &:hover, &:focus { background: $mainColor; }
       }
     }
-
   }
 
   /* Breadcrums ---------------------- */
@@ -289,17 +293,19 @@
     .cta-button { background-color: $priceCtaBgColor; text-align: $priceCtaAlign; padding: $priceCtaPadding; }
   }
 
-pre { background: #0B1022;
-  overflow: scroll;
-  margin: 0px;
-  padding: 0px;
+pre {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  margin: 0;
   padding: 10px;
-  padding-top: 0;
-  padding-bottom: 12px;
-  color: #fff;
   font-size: 13px;
-  margin-bottom: 20px;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
+  font-family: 'Source Code Pro', Monaco, monospace;
+
+  background-color: black;
+  white-space: pre-line;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }

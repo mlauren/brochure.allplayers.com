@@ -24,7 +24,9 @@
   .top-bar { background: transparent; height: $topBarHeight; line-height: $topBarHeight; margin: 0 0 $topBarBtmMargin; padding: 0; width: 100%; position: relative;
 
     /* Contain width to .row width */
-    .contain-to-grid & { max-width: $rowWidth; margin: 0 auto; }
+    .contain-to-grid & { max-width: $rowWidth; margin: 0 auto; 
+      &.branding {margin: 10px auto 0;}
+    }
 
     /* First <ul> for branding, title, name, etc */
     &>ul {

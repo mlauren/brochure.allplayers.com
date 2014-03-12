@@ -5,30 +5,97 @@ body.branding-guide {background: $secondaryColor;
 	.branding-wrapper {background: $white; border-bottom: 4px solid $grey; z-index: 1; position: relative; overflow: visible;}
 	&.front {
 
- 	.branding {border-bottom: 0 none;}
+	 	.branding {border-bottom: 0 none;}
 
- 	.branding-wrapper {
-		#feature-hero {background: url("../images/branding/bgnoise.png"); 
-			.color-overlay {background-color: $mainColorRBGA; border-top: 10px solid lighten($secondaryColor, 50%); padding-top: $columnGutter;}
-			h1 {font-weight: bold; border-bottom: 1px solid $white;}
-			h1, h2, h3, h4, h5 {@include shadow($white,transparent);}
-		}
+	 	.branding-wrapper {
+			#feature-hero {background: url("../images/branding/bgnoise.png"); 
+				.color-overlay {background-color: $mainColorRBGA; border-top: 10px solid lighten($secondaryColor, 50%); padding-top: $columnGutter;}
+				h1 {font-weight: bold; border-bottom: 1px solid $white;}
+				h1, h2, h3, h4, h5 {@include shadow($white,transparent);}
+			}
 
-		#banner-shading { margin-bottom: $columnGutter;
-			div:first-child {@include cssScaleneTriangle(0 15px 20px 0, darken($grey, 20%), right);}
-			div:last-child {@include cssScaleneTriangle(20px 15px 0 0, darken($grey, 20%), top);}
+			#banner-shading { margin-bottom: $columnGutter;
+				div:first-child {@include cssScaleneTriangle(0 15px 20px 0, darken($grey, 20%), right);}
+				div:last-child {@include cssScaleneTriangle(20px 15px 0 0, darken($grey, 20%), top);}
+			}
+			.eq-home-feature {
+				h1, h2, h3, h4, h5 {@include shadow($white,transparent);}
+			}
+			#branding-job {background: $standardAlertColor; padding: $columnGutter 0 !important; border-top: 1px solid darken($standardAlertColor, 10%); border-bottom: 1px solid darken($standardAlertColor, 10%);}
+			#feature-team img {border:3px solid $grey;}
 		}
-		.eq-home-feature {
-		h1, h2, h3, h4, h5 {@include shadow($white,transparent);}
-		}
-		#branding-job {background: $standardAlertColor; padding: $columnGutter 0 !important; border-top: 1px solid darken($standardAlertColor, 10%); border-bottom: 1px solid darken($standardAlertColor, 10%);}
-		#feature-team img {border:3px solid $grey;}
-	}
-
- }
+ 	}
  #sidebar1 {
  	.panel {margin-top: $columnGutter;}
  }
+
+ /**~Goes through each of the special individualized branding of mainline~**/
+	.panel.special-header {
+		span {@extend p; display: inline;}
+	 	.color-swatch {width: 18.66667%; min-height: 50px; margin: 5.9px; text-align: center;
+	 		&>strong {vertical-align: -18px;
+	 			&.white {color: white;}
+	 		}
+	 	}
+	  .view-id-dashboard{ padding: 5px; background: $white; @include slight_dropshadow($darkGrey);
+	  	.view-header, .tabs.pill {@include clearfix(); height: 45px; padding: 10px; @include simpleGradient(#323232);
+			  h3 { margin: 0; float: left; font-size: 20px; font-weight: bold; color: $white;}
+			  a {float: right; color: $white; margin-left: 5px;}
+	  	}
+		  .content-wrapper {
+		  	padding: 5px;
+		  }
+		}
+		#block-boxes-og {
+			h2.block-title {
+			  background: #474747;
+			  background: -moz-linear-gradient(top, #474747 0%, #2e2e2e 100%);
+			  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #474747), color-stop(100%, #2e2e2e));
+			  background: -webkit-linear-gradient(top, #474747 0%, #2e2e2e 100%);
+			  background: -o-linear-gradient(top, #474747 0%, #2e2e2e 100%);
+			  background: -ms-linear-gradient(top, #474747 0%, #2e2e2e 100%);
+			  background: linear-gradient(to bottom, #474747 0%, #2e2e2e 100%);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color', endColorstr='darken($color,20%)',GradientType=0 );
+			  border: 1px solid #e5e5e5;
+			  border-bottom: 0;
+			  text-transform: uppercase;
+			  margin: 0;
+			  font-size: 17px;
+			  padding: 5px 10px;
+			  text-shadow: 1px 1px black;
+			  color: white !important;
+			  font-weight: bold;
+			}
+			.content {
+				background: white;
+				padding: 10px;
+				color: #474747;
+				border: 1px solid #e5e5e5;
+			}
+		}
+		// User navigation example
+		.anchor-menu .header {
+		  *zoom: 1;
+		  height: 40px;
+		  padding: 10px;
+		  background: #323232;
+		  background: -moz-linear-gradient(top, #323232 0%, black 100%);
+		  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #323232), color-stop(100%, black));
+		  background: -webkit-linear-gradient(top, #323232 0%, black 100%);
+		  background: -o-linear-gradient(top, #323232 0%, black 100%);
+		  background: -ms-linear-gradient(top, #323232 0%, black 100%);
+		  background: linear-gradient(to bottom, #323232 0%, #000000 100%);
+		  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color', endColorstr='darken($color,20%)',GradientType=0 );
+			h3 {
+				margin: 0;
+				float: left;
+				font-size: 20px;
+				font-weight: bold;
+				color: white;
+			}
+		}
+
+	}
 }
 .contain-to-grid {
 	&.branding {background: transparent none;}
@@ -46,6 +113,8 @@ body.branding-guide {background: $secondaryColor;
 		}
 	}
 }
+
+
 /**~Main~**/
 
 

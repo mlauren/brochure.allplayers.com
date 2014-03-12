@@ -24,14 +24,21 @@
 
   <!-- Sub page layout for brochure branding site -->
   {% if page.layout_keyword == 'sub_page' %}
-  <div class="row branding-wrapper">
-    <section class="eight columns">
-      {{ content }}
-    </section>
-    <section id="sidebar1" class="four columns" role="complementary">
-      {% include info-right-col.snippet %}
-    </section>
-  </div>
+    <div class="row branding-wrapper">
+      <section class="eight columns">
+        {{ content }}
+      </section>
+      <section id="sidebar1" class="four columns" role="complementary">
+        {% include info-right-col.snippet %}
+      </section>
+    </div>
+  {% elsif page.layout_keyword == null %}
+    <!-- If there is no layout keyword -->
+    <div class="row branding-wrapper">
+      <section class="twelve columns">
+        {{ content }}
+      </section>
+    </div>
   {% endif %}
 <!-- END Sub page layout for brochure branding site -->
 <footer class="branding-guide row">

@@ -75,7 +75,7 @@
   }
   header {
     section {background: transparent;}
-    .contain-to-grid {z-index: 999; @include simpleGradient(#323232); @include slight_dropshadow(#515151); padding: 0; border-bottom: 1px solid #414040;}
+    .contain-to-grid:not(.branding) {z-index: 999; @include simpleGradient(#323232); @include slight_dropshadow(#515151); padding: 0; border-bottom: 1px solid #414040;}
   }
   @media only screen and (max-width: $screenSmall - 1) {
     .top-bar {background: transparent;
