@@ -2,11 +2,18 @@
 layout: branding
 title: Design Patterns and Textures
 group: branding
-weight: 0
+weight: 2
+submenu:
+  - { hook: "pattern-swatches", title: "Swatches" }
+  - { hook: "pattern-typography", title: "Typography" }
+  - { hook: "pattern-dashboard-content", title: "Dashboard Content Block" }
+  - { hook: "pattern-group-block", title: "Group Content Block" }
+  - { hook: "pattern-userspace-sidebar", title: "Userspace Sidebar" }
+  - { hook: "pattern-pagination", title: "Pagination" }
 ---
   <h2>{{ page.title }}</h2>
   <hr>
-	<div class="panel twelve columns white special-header">
+	<div id="pattern-swatches" class="panel twelve columns white special-header">
 		<h5>Swatches</h5>
 		<div class="twelve columns">
 			<div class="color-swatch three columns" style="background-color: #3bb4ff;">
@@ -26,7 +33,7 @@ weight: 0
 			</div>
 		</div>
   </div>
-  <div class="panel twelve columns white special-header">
+  <div id="pattern-typography" class="panel twelve columns white special-header">
 		<h5>Typography</h5>
 		<div class="twelve columns">
 			<ul style="list-style-type: none; margin-bottom: 0;">
@@ -36,18 +43,18 @@ weight: 0
 			</ul>
 		</div>
   </div>
-  <div class="panel twelve columns white special-header">
+  <div id="pattern-dashboard-content" class="panel twelve columns white special-header">
   	<h5>Dashboard Content Block</h5>
 		<div class="view view-dashboard-calendar-upcoming view-id-dashboard six columns">
       <div class="view-header">
-      	<h3><i class="icon-calendar"></i><a href="#"> Dashboard Content Block</a></h3><a class="calender-dashboard tiny round button">View Xtra Content</a>    
+      	<h3><i class="icon-calendar"></i><a> Dashboard Content Block</a></h3><a class="calender-dashboard tiny round button">View Xtra Content</a>
       </div>
 			<div class="content-wrapper">
 				<p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
 			</div>
 		</div>
   </div>
- 	<div class="panel twelve columns white special-header">
+ 	<div id="pattern-group-block" class="panel twelve columns white special-header">
  		<h5>Group Dashboard Content Block</h5>
 		<div id="block-boxes-og" class="block block-boxes six columns">
 			<h2 class="block-title">How To Register</h2>
@@ -60,7 +67,7 @@ weight: 0
 			</div>
 	  </div>
 	</div>
-	<div class="panel twelve columns white special-header">
+	<div id="pattern-userspace-sidebar" class="panel twelve columns white special-header">
 		<h5>User Space Sidebar</h5>
 		<div class="six anchor-menu sticky-nav">
 		  <div class="header">
@@ -74,7 +81,7 @@ weight: 0
 		  </ul>
 		</div>
 	</div>
-	<div class="panel twelve columns white special-header">
+	<div id="pattern-pagination" class="panel twelve columns white special-header">
 		<h5>Pagination</h5>
 		<ul class="pagination"><li class="current first"><a href="/">1</a></li>
 			<li><a title="Go to page 2" class="active">2</a></li>

@@ -15,13 +15,13 @@
 		      {% if weight == nodeweight %}
 		        {% if group == null or group == node.group %}
 		          {% if node.title == "Branding Guide" %}{% else %}
-		          <div class="section-wrapper three columns left {% if page.url == node.url %}active {% endif %}{% if node.title == "Tabs" %}tabs-notmenu{% else %}{{ node.title | replace:' ','-' | downcase }}{% endif %}">
+		          <div class="section-wrapper four columns left {% if page.url == node.url %}active {% endif %}{% if node.title == "Tabs" %}tabs-notmenu{% else %}{{ node.title | replace:' ','-' | downcase }}{% endif %}">
 
-			          	<h5 class="white"><a href="{{ node.url }}">{{ node.title }}</a></h5>
+			          	<h5 class="white"><a href="{{ site.url }}{{ node.url }}">{{ node.title }}</a></h5>
 			          {% if node.submenu %}
 		          		<ul>
 				          	{% for item in node.submenu %}
-				          		<li><a href="{{ node.url }}#{{ item.hook }}">{{ item.title }}</a></li>
+				          		<li><a href="{{ site.url }}{{ node.url }}#{{ item.hook }}">{{ item.title }}</a></li>
 				          	{% endfor %}
 			          	</ul>
 			        	{% endif %}

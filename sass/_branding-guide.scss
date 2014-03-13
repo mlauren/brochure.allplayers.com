@@ -10,7 +10,7 @@ body.branding-guide {background: $secondaryColor;
 	 	.branding-wrapper {
 			#feature-hero {background: url("../images/branding/bgnoise.png"); 
 				.color-overlay {background-color: $mainColorRBGA; border-top: 10px solid lighten($secondaryColor, 50%); padding-top: $columnGutter;}
-				h1 {font-weight: bold; border-bottom: 1px solid $white;}
+				h1 {font-weight: bold;}
 				h1, h2, h3, h4, h5 {@include shadow($white,transparent);}
 			}
 
